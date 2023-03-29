@@ -22,7 +22,7 @@ const Process = () => {
           </div>
 
           <div className="">
-            <img src={shapesRight} alt=""  className="object-cover"/>
+            <img src={shapesRight} alt=""  className="w-[70px] md:w-fit ss:w-[50px] smd:w-[80px]"/>
           </div>
         </div>
         <div className="team-members mt-5 md:mt-10 flex gap-5 md:gap-7 items-center justify-center flex-wrap  ">
