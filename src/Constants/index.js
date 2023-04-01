@@ -23,10 +23,6 @@ const NavLinks = [
     id: "contact",
     title: "Contact us",
   },
-  {
-    id: "blog",
-    title: "Blog",
-  },
 ];
 
 export { NavLinks };
