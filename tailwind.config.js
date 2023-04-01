@@ -5,26 +5,28 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#7ec33e4d",
-        secondary: "#DBFEBA",
-        base: "#7EC33E",
-        neutral: "#26A69A",
-        semiNeutral: "#26a69a99",
-        gray: "#818181",
-        black: "#292929",
-        white: "#FFFFFF",
-        light: "#c1c7c626",
-        bodyColor: "#f5f5f5s",
-        veryDim: "#F5F5F5",
+        black: "#232536",
+        gray: "#5D5F6D",
+        darkBlue: "#232536",
+        lightBlue: "#666DFF",
+        orange: "#FFA155",
+        lightOrange: "#FFD3AF",
+        primary: "#444CFC",
+        lightCyan: "#ECF8F9",
+        chalk: "#FFE6D2",
+        neutral: "#ffffff0f",
+        veryDim: "#2325362b",
+        lightPurple: "#F9F9FF",
+
+
       },
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
-        nunito: ["Nunito", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       fontWeight: {
         normal: 400,
-        semibold: 600,  
-        bold: 700,
+        semibold: 500,  
+        bold: 600,
       },
       boxShadow: {
         edgeCard: "0px 4px 4px #0000000d",
