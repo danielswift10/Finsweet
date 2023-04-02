@@ -1,9 +1,13 @@
+import styles from "../../../styles";
+
 const Services = () => {
     return ( 
-        <section className="">
-            <div className="services-container"></div>
+        <section className="bg-chalk py-10 ">
+            <div className={` ${styles.boxWidth} ${styles.padding} `}>
+
+            </div>
         </section>
      );
 }
- s
+ 
 export default Services;
