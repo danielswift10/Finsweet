@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { About, Expertise, Hero } from "../../Components/Home";
+
 
 const Home = (props) => {
     useEffect(() => {
@@ -7,7 +9,9 @@ const Home = (props) => {
 
     return ( 
         <div className="">
-            
+            <Hero/>
+            <About/>
+            <Expertise/>
         </div>
      );
 }

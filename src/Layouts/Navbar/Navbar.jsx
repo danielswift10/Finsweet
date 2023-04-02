@@ -48,28 +48,28 @@ const Navbar = () => {
     return ( 
         <nav 
         className={`${
-          scrolled ? "bg-darkBlue" : "bg-darkBlue"
+          scrolled ? "bg-darkBlue border-b border-b-gray" : "bg-darkBlue"
         } w-full mx-auto fixed top-0 z-20`}>
-                  <div className={`bg-darkBlue  ${styles.flexBetween} ${styles.paddingX} ${styles.boxWidth}`} >
+                  <div className={`bg-darkBlue ${styles.flexBetween} ${styles.paddingX} ${styles.boxWidth}`} >
         <a href="#" className="logo ">
           <img
             src={logo}
             alt="talent-assurance"
-            className="w-[104px] object-contain md:w-[120px] cursor-pointer "
+            className="w-[104px] object-contain md:w-[120px] lg:w-[122px] cursor-pointer "
           />
         </a>
-        <div className="navbar-links-desk smd:flex flex-row hidden justify-end items-center">
+        <div className="navbar-links-desk md:flex flex-row hidden justify-end items-center">
           <ul className="flex">
             {NavLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`cursor-pointer font-poppins py-5 font-semibold text-[16px] ${
-                  active === nav.title ? "text-white border-t-[3px] border-t-orange " : "text-gray"
+                className={`cursor-pointer font-poppins py-7 font-semibold text-[16px] ${
+                  active === nav.title ? "text-white border-t-[3px] pt-[17px] border-t-orange " : "text-gray"
                 } 
                                 ${
                                   index === NavLinks.length 
                                     ? "mr-0"
-                                    : "mr-[40px] sm:mr-[40px] text-[15px] hover:font-bold hover:text-white lg:text-[17px] lg:leading-[24px]  md:mr-[50px] "
+                                    : "mr-[40px] sm:mr-[40px] text-[15px] hover:font-bold hover:text-white lg:text-[17px] lg:leading-[24px]  md:mr-[30px] lg:mr-[50px] "
                                 }`}
                 onClick={() => setActive(nav.title)}
               >
@@ -84,7 +84,7 @@ const Navbar = () => {
           </a> 
         </div>
         <div
-          className="navbar-links-mobile smd:hidden flex flex-1 justify-end items-center z-[2]"
+          className={` ${styles.flexEnd} py-8 navbar-links-mobile md:hidden flex-1 z-[2]`}
           ref={ref}
         >
           <div
