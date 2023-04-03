@@ -12,7 +12,7 @@ const Hero = () => {
                     Transform Your Idea Into Reality with Finsweet
                     </h1>
                     <p className={`mb-6 ${styles.paragraph} md:w-[480px] xs:text-[18px] ss:w-[550px] lg:w-[520px]  xl:w-[528px] text-gray`}>The entire Finsweet team knows what's good with Webflow and you can too with 1 week and a good attitude.</p>
-                    <Button/>
+                    <Button title={'Request Quote'}/>
                 </div>
                 <div className={`hero-image `}>
                     <img src={heroImage} alt="" />

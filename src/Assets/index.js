@@ -18,6 +18,9 @@ import statShapes from "./icons/statistics-shape.png"
 import timeDelivery from "./icons/delivery.png"
 import quality from "./icons/quality.png"
 import supportAssist from "./icons/assist.png"
+import support from "./icons/support.png"
+import testing from "./icons/testing.png"
+import dev from "./icons/development.png"
 
 
 export {
@@ -40,4 +43,7 @@ export {
     timeDelivery,
     quality, 
     supportAssist,
+    support,
+    testing,
+    dev,
 }

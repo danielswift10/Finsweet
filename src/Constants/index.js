@@ -1,4 +1,18 @@
-import { ipsum1, ipsum2, ipsum3, ipsum4, ipsum5, quality, statShapes, supportAssist, timeDelivery } from "../Assets";
+import {
+  dev,
+  development,
+  ipsum1,
+  ipsum2,
+  ipsum3,
+  ipsum4,
+  ipsum5,
+  quality,
+  statShapes,
+  support,
+  supportAssist,
+  testing,
+  timeDelivery,
+} from "../Assets";
 
 const NavLinks = [
   {
@@ -82,20 +96,47 @@ const Expertises = [
     id: 1,
     image: timeDelivery,
     title: "On Time Delivery",
-    content: "Through True Rich Attended does no end it his mother since real had half every him.",
+    content:
+      "Through True Rich Attended does no end it his mother since real had half every him.",
   },
   {
     id: 2,
     image: quality,
     title: "Best Quality",
-    content: "Through True Rich Attended does no end it his mother since real had half every him.",
+    content:
+      "Through True Rich Attended does no end it his mother since real had half every him.",
   },
   {
     id: 3,
     image: supportAssist,
     title: "Support Assist",
-    content: "Through True Rich Attended does no end it his mother since real had half every him.",
+    content:
+      "Through True Rich Attended does no end it his mother since real had half every him.",
   },
-]
+];
 
-export { NavLinks, Ipsum, Statistics, Expertises };
+const ServicesCard = [
+  {
+    id: 1,
+    image: support,
+    title: "Technical Support",
+    content:
+      "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+  },
+  {
+    id: 2,
+    image: testing,
+    title: "Testing Management",
+    content:
+      "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+  },
+  {
+    id: 3,
+    image: dev,
+    title: "Development",
+    content:
+      "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+  },
+];
+
+export { NavLinks, Ipsum, Statistics, Expertises, ServicesCard };
