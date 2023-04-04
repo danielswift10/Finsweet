@@ -32,6 +32,7 @@ export const layout = {
     section: `flex md:flex-row flex-col ${styles.paddingY}`,
     section1: `flex md:flex-row flex-col`,
     section2: `flex lg:flex-row flex-col`,
+    sectionCol: `flex flex-col`,
     
     button: `bg-primary ${styles.flexCenter} gap-4 text-white font-poppins text-[16px] font-semibold xl:leading-[24px] `
 }

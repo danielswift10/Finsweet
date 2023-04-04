@@ -1,3 +1,4 @@
+import { arrowRightDark } from "../../../Assets";
 import { ServicesCard } from "../../../Constants";
 import { Button } from "../../../Utils";
 import styles, { layout } from "../../../styles";
@@ -7,7 +8,7 @@ const Services = () => {
     <section className="bg-chalk py-10 ">
       <div className={` ${styles.boxWidth} ${styles.padding} `}>
         <div
-          className={`${layout.section2} about-us ${styles.flexStartB} md:items-start gap-10 md:gap-10`}
+          className={`${layout.sectionCol} about-us ${styles.flexStartB} md:items-start gap-10 md:gap-10`}
         >
           <div>
             <p className={`${styles.caption} mb-3`}>OUR SERVICES</p>
@@ -19,12 +20,17 @@ const Services = () => {
             </h2>
             <Button title={"Start a Project"} />
           </div>
-          <div className="flex flex-col md:flex-row  mx-auto w-full gap-5">
+          {/* <div className="flex items-center justify-center flex-wrap gap-4"> */}
+          <div className="team-members flex gap-5 md:gap-7 items-center justify-center flex-wrap  ">
             {ServicesCard.map((service, index) => (
-              <div className="bg-white flex flex-col items-center w-[320px] mx-auto xs:w-[380px] ss:w-[400px] sm:w-[450px] md:w-full lg:w-[515px] mx-auto  h-[250px] lg:h-[140px] px-8">
-                <img src={service.image} alt="image" />
-                <h6 className={`${styles.heading6} mb-1 xs:text-[19px] md:text-[16px]`}>{service.title}</h6>
-                    <p className={`${styles.paragraph} xs:text-[17px]  md:text-[14px] text-gray lg:w-[303px]`}>{service.content}</p>
+              <div className="bg-white px-7 py-10 flex flex-col items-start justify-center w-[325px] sm:w-[405px] ss:px-9 h-[335px] ">
+                <img src={service.image} alt="image" className="w-[50px] mb-5 xl:w-[47px] " />
+                <h6 className={`${styles.heading6} mb-1 xs:text-[19px] lg:text-[16px] mb-3 text-secondary `}>{service.title}</h6>
+                    <p className={`${styles.paragraph} mb-5 xs:text-[17px] lg:text-[14px] text-gray lg:w-[303px]`}>{service.content}</p>
+                    <a href="#about"  className={`read-more ${styles.flexCenter} gap-3 text-primary font-poppins font-semibold text-[16px] leading-[24px] `}>
+                        Read more
+                        <img src={arrowRightDark} alt="" />
+                    </a>
               </div>
             ))}
           </div>
