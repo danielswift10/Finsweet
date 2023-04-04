@@ -11,7 +11,7 @@ const About = () => {
                         <p className={`${styles.caption} mb-3`}>
                             ABOUT US
                         </p>
-                        <h2 className={`${styles.heading2} text-[30px] sm:text-[35px] lg:text-[40px] xl:w-[640px] smd:w-[700px] md:w-full  text-black`}>
+                        <h2 className={`${styles.heading2} text-[30px] sm:text-[35px] lg:text-[40px]  xl:w-[640px] smd:w-[700px] md:w-full  text-black`}>
                         The company leads entire webdesign process from concept to delivery.
                         </h2>
                     </div>

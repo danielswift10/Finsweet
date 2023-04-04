@@ -6,7 +6,7 @@ import { Ipsum } from "../../../Constants"
 const Hero = () => {
     return ( 
         <div className="hero bg-darkBlue">
-            <div className={` ${layout.section}  gap-10 flex justify-center items-center lg:justify-between   ${styles.boxWidth} mt-[60px] lg:gap-0 md:pt-[120px] pt-40 ${styles.padding}`}>
+            <div className={` ${layout.section}  gap-10 flex justify-center items-center lg:justify-between   ${styles.boxWidth} mt-[60px] lg:gap-0 md:pt-[120px] pt-20 ${styles.padding}`}>
                 <div className="hero-content">
                     <h1 className={`${styles.heading1} xs:text-[37px] mb-3 text-[30px] ss:w-[520px] md:text-[42px] lg:text-[46px] lg:w-[5S0px] sm:w-[500px] md:mb-[30px] `}>
                     Transform Your Idea Into Reality with Finsweet

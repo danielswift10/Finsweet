@@ -24,9 +24,9 @@ const Expertise = () => {
               unsatiable saw his giving Remain expense you position concluded.
             </p>
           </div>
-          <div className="expertise-others flex flex-col md:flex-row lg:flex-col mx-auto gap-3 ">
+          <div className="expertise-others flex flex-wrap items-center justify-center md:flex-row lg:flex-col mx-auto gap-5 md:gap-7 ">
             {Expertises.map((item, index) => (
-              <div className="bg-white flex flex-row items-center w-[320px] mx-auto xs:w-[380px] ss:w-[400px] sm:w-[450px] md:w-full lg:w-[515px] mx-auto  h-[250px] lg:h-[140px] px-8">
+              <div className="bg-white flex flex-row items-center w-full mx-auto xs:w-[330px] ss:w-[405px] sm:w-[350px]  lg:w-[515px] mx-auto  h-[250px] lg:h-[140px] px-8">
                <div className="flex flex-col lg:flex-row  gap-5">
                <div className="image">
                     <img src={item.image} alt="" className="md:w-[47px]   "/>
