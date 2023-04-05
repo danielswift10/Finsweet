@@ -12,7 +12,7 @@ const Process = () => {
           <div>
             <p className={`${styles.caption} mb-3`}>OUR PROCESS</p>
             <h2
-              className={`${styles.heading2} mb-5 md:mb-8 text-[30px] sm:w-[400px]  sm:text-[35px] md:w-[650px] lg:text-[40px] xl:w-[777px]  text-black`}
+              className={`${styles.heading2} mb-5 md:mb-8 text-[30px] sm:w-[400px]  sm:text-[5px] md:w-[650px] lg:text-[40px] xl:w-[777px]  text-black`}
             >
               The process we are working With Our client Worldwide
             </h2>
