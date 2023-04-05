@@ -12,7 +12,7 @@ const Process = () => {
           <div>
             <p className={`${styles.caption} mb-3`}>OUR PROCESS</p>
             <h2
-              className={`${styles.heading2} mb-5 md:mb-8 text-[30px] sm:text-[35px] md:w-[650px] lg:text-[40px] xl:w-[777px] smd:w-[700px] md:w-[800px]  text-black`}
+              className={`${styles.heading2} mb-5 md:mb-8 text-[30px] sm:w-[400px]  sm:text-[35px] md:w-[650px] lg:text-[40px] xl:w-[777px]  text-black`}
             >
               The process we are working With Our client Worldwide
             </h2>
@@ -22,7 +22,7 @@ const Process = () => {
           </div>
 
           <div className="">
-            <img src={shapesRight} alt=""  className="w-[70px]  ss:w-[50px] smd:w-[80px]"/>
+            <img src={shapesRight} alt=""  className="w-[70px] md:w-fit xs:w-[0px] "/>
           </div>
         </div>
         <div className="team-members mt-5 md:mt-10 flex gap-5 md:gap-7 items-center justify-center flex-wrap  ">
