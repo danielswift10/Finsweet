@@ -1,16 +1,21 @@
 import {
+  deployment,
   dev,
   development,
+  devv,
+  discover,
   ipsum1,
   ipsum2,
   ipsum3,
   ipsum4,
   ipsum5,
+  maintenance,
   quality,
   statShapes,
   support,
   supportAssist,
   testing,
+  testingg,
   timeDelivery,
 } from "../Assets";
 
@@ -139,4 +144,48 @@ const ServicesCard = [
   },
 ];
 
-export { NavLinks, Ipsum, Statistics, Expertises, ServicesCard };
+const ProcessCard = [ 
+  {
+    id: 1,
+    image: discover,
+    title: "Discover",
+    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    number: "01",
+  },
+  {
+    id: 1,
+    image: discover,
+    title: "Discover",
+    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    number: "01",
+  },
+  {
+    id: 3,
+    image: devv,
+    title: "Development",
+    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    number: "04",
+  },
+  {
+    id: 4,
+    image: testingg,
+    title: "Testing",
+    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    number: "04",
+  },
+  {
+    id: 5,
+    image: deployment,
+    title: "Deployment",
+    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    number: "05",
+  },
+  {
+    id: 6,
+    image: maintenance,
+    title: "Maintenance",
+    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    number: "06",
+  },
+]
+export { NavLinks, Ipsum, Statistics, Expertises, ServicesCard, ProcessCard };

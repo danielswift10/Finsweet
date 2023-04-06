@@ -14,6 +14,7 @@ import aboutImage2 from "./images/about-image-2.png"
 import aboutImage3 from "./images/about-image-3.png"
 import arrowRightDark from "./icons/arrow-right-dark.svg"
 import statShapes from "./icons/statistics-shape.png"
+import shapesRight from "./icons/shapes-right.png"
 
 import timeDelivery from "./icons/delivery.png"
 import quality from "./icons/quality.png"
@@ -22,8 +23,21 @@ import support from "./icons/support.png"
 import testing from "./icons/testing.png"
 import dev from "./icons/development.png"
 
+import discover from "./icons/discover.png"
+import designing from "./icons/designing.png"
+import devv from  "./icons/development1.png"
+import testingg from "./icons/testing1.png"
+import deployment from "./icons/deployment.png"
+import maintenance from "./icons/maintenance.png"
 
 export {
+    shapesRight,
+    discover,
+    designing,
+    devv,
+    testingg,
+    deployment,
+    maintenance,
     menu,
     close,
     logo,

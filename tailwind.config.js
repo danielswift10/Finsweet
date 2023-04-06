@@ -29,11 +29,8 @@ module.exports = {
         semibold: 500,  
         bold: 600,
       },
-      boxShadow: {
-        edgeCard: "0px 4px 4px #0000000d",
-        contactCard: "0px 4px 4px #0000000d",
-        scrollBtn: "0px 5px 7px #0000003d",
-        sendBtb:"0px 4px 8px 0000000d",
+      dropShadow: {
+        "serviceCard": "0px 50px 60px #ffa15559",
       }
     },
     screens: {

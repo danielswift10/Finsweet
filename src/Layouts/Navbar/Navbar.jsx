@@ -64,7 +64,7 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`cursor-pointer font-poppins py-7 font-semibold text-[16px] ${
-                  active === nav.title ? "text-white border-t-[3px] pt-[17px] border-t-orange " : "text-gray"
+                  active === nav.title ? "text-white border-t-[3px] pt-[25px] border-t-orange " : "text-gray"
                 } 
                                 ${
                                   index === NavLinks.length 
