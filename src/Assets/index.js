@@ -41,8 +41,10 @@ import blog2 from "./images/blogr2.png"
 import newsLetterShape from "./icons/newsletter-shapes.png"
 import processShape from "./icons/processShape.png"
 import aboutShape from "./icons/about-us-shapes.png"
+import newsLetterShape1 from "./icons/newsletter-shape.png" 
 
 export {
+    newsLetterShape1,
     aboutShape,
     processShape,
     newsLetterShape,
