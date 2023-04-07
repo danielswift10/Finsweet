@@ -14,6 +14,7 @@ import {
   ipsum5,
   line,
   maintenance,
+  processShape,
   quality,
   statShapes,
   support,
@@ -156,6 +157,7 @@ const ProcessCard = [
     content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "01",
     lined: line,
+    shape: processShape,
   },
   {
     id: 2,
@@ -195,6 +197,7 @@ const ProcessCard = [
     title: "Maintenance",
     content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "06",
+    shape2: processShape,
     // lined: line,
   },
 ]

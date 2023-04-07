@@ -39,8 +39,10 @@ import reviewShape from "./icons/review-shape.png"
 import blog1 from "./images/blogr1.png"
 import blog2 from "./images/blogr2.png"
 import newsLetterShape from "./icons/newsletter-shapes.png"
+import processShape from "./icons/processShape.png"
 
 export {
+    processShape,
     newsLetterShape,
     blog1,
     blog2,
