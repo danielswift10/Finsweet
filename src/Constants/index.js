@@ -1,5 +1,8 @@
 import {
+  blog1,
+  blog2,
   deployment,
+  designing,
   dev,
   development,
   devv,
@@ -9,6 +12,7 @@ import {
   ipsum3,
   ipsum4,
   ipsum5,
+  line,
   maintenance,
   quality,
   statShapes,
@@ -151,20 +155,23 @@ const ProcessCard = [
     title: "Discover",
     content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "01",
+    lined: line,
   },
   {
-    id: 1,
-    image: discover,
-    title: "Discover",
+    id: 2,
+    image: designing,
+    title: "Designing",
     content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
-    number: "01",
+    number: "02",
+    lined: line,
   },
   {
     id: 3,
     image: devv,
     title: "Development",
     content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
-    number: "04",
+    number: "03",
+    // lined: line,
   },
   {
     id: 4,
@@ -172,6 +179,7 @@ const ProcessCard = [
     title: "Testing",
     content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "04",
+    lined: line,
   },
   {
     id: 5,
@@ -179,6 +187,7 @@ const ProcessCard = [
     title: "Deployment",
     content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "05",
+    lined: line,
   },
   {
     id: 6,
@@ -186,6 +195,28 @@ const ProcessCard = [
     title: "Maintenance",
     content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "06",
+    // lined: line,
   },
 ]
-export { NavLinks, Ipsum, Statistics, Expertises, ServicesCard, ProcessCard };
+
+const Blogr = [
+  {
+    id: 1,
+    image: blog1,
+    date: "Jan 19, 2023",
+    title: "Today’s best design trends for digital products",
+  },
+  {
+    id: 2,
+    image: blog2,
+    date: "Jan 19, 2023",
+    title: "A practical guide to building a brand strategy",
+  },
+  // {
+  //   id: 3,
+  //   image: blog1,
+  //   date: "Jan 19, 2023",
+  //   title: "The modern view on digital products",
+  // },
+]
+export { NavLinks, Ipsum, Statistics, Expertises, ServicesCard, ProcessCard, Blogr };

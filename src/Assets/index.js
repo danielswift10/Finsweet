@@ -29,9 +29,29 @@ import devv from  "./icons/development1.png"
 import testingg from "./icons/testing1.png"
 import deployment from "./icons/deployment.png"
 import maintenance from "./icons/maintenance.png"
+import line from "./icons/line.png"
+import avatar1 from "./icons/avatar1.png"
+import avatar2 from "./icons/avatar2.png"
+import avatar3 from "./icons/avatar3.png"
+import ipsumCustomer from "./icons/ipsum-customer.png"
+import quote from "./icons/quote.png"
+import reviewShape from "./icons/review-shape.png"
+import blog1 from "./images/blogr1.png"
+import blog2 from "./images/blogr2.png"
+import newsLetterShape from "./icons/newsletter-shapes.png"
 
 export {
+    newsLetterShape,
+    blog1,
+    blog2,
+    quote,
+    reviewShape,
+    ipsumCustomer,
+    avatar1,
+    avatar2,
+    avatar3,
     shapesRight,
+    line,
     discover,
     designing,
     devv,

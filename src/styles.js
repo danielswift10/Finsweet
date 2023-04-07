@@ -4,6 +4,7 @@ const styles  = {
     heading1: "font-poppins font-bold w-full xl:text-[56px] xl:leading-[68px] xl:w-[624px] text-white  ",
     heading2: "font-poppins font-bold w-full xl:text-[48px] xl:leading-[58px] leading-[42px] text-black  ",
     heading3: "font-poppins font-bold w-full xl:text-[36px] xl:leading-[54px] text-black  ",
+    heading4: "font-poppins font-bold w-full xl:text-[24px] xl:leading-[36px] text-black  ",
     heading6: "font-poppins font-bold w-full xl:text-[16px] xl:leading-[28px] text-secondary  ",
 
     
