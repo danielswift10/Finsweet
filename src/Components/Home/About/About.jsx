@@ -1,4 +1,4 @@
-import { aboutImage1, aboutImage2, aboutImage3, arrowRight, arrowRightDark } from "../../../Assets";
+import { aboutImage1, aboutImage2, aboutImage3, aboutShape, arrowRight, arrowRightDark } from "../../../Assets";
 import { Statistics } from "../../../Constants";
 import styles, { layout } from "../../../styles";
 
@@ -27,7 +27,8 @@ const About = () => {
                 <div className={`${styles.flexWrap} gap-3`}>
                     <img src={aboutImage1} alt="" className="object-cover"/>
                     <img src={aboutImage2} alt="" />
-                    <img src={aboutImage3} alt="" />
+                    {/* <img src={aboutShape} alt=""  className="absolute "/> */}
+                    <img src={aboutImage3} alt="" className="relative" />
                 </div>
                 <div className={`statistics ${styles.flexBetween} ${layout.section1} ${styles.paddingY} mt-3 gap-10`}>
                     <div className={`statistics-content flex flex-col sm:gap-10 md:gap-[60px] xs:flex-row gap-5`}>
