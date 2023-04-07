@@ -12,6 +12,7 @@ const styles  = {
     paragraphSmall: "font-poppins font-semibold text-[14px] xl:leading-[20px]",
     paragraphLarge: "font-poppins font-semibold text-[18px]  xl:leading-[28px]",
 
+    textLink: "font-poppins font-semibold text-[16px] leading-[24px]",
     caption: "font-poppins font-semibold text-[14px] leading-[20px] text-secondary tracking-[3px]",
 
     flexCenter: "flex justify-center items-center",
@@ -24,6 +25,7 @@ const styles  = {
     paddingX: "sm:px-16 px-7 xl:px-0",
     paddingY: "sm:py-16 py-6",
     padding: "sm:px-16 px-7 xl:px-0  sm:py-12  py-4",
+    padding2: "sm:px-16 px-7 xl:px-0 ",
 
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",

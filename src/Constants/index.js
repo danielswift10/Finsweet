@@ -1,4 +1,8 @@
 import {
+  aboutImage1,
+  aboutImage2,
+  aboutImage3,
+  aboutShape,
   blog1,
   blog2,
   deployment,
@@ -7,12 +11,16 @@ import {
   development,
   devv,
   discover,
+  expertiseShape,
+  facebook,
+  instagram,
   ipsum1,
   ipsum2,
   ipsum3,
   ipsum4,
   ipsum5,
   line,
+  linkedln,
   maintenance,
   processShape,
   quality,
@@ -22,6 +30,7 @@ import {
   testing,
   testingg,
   timeDelivery,
+  twitter,
 } from "../Assets";
 
 const NavLinks = [
@@ -122,6 +131,7 @@ const Expertises = [
     title: "Support Assist",
     content:
       "Through True Rich Attended does no end it his mother since real had half every him.",
+      shape: expertiseShape,
   },
 ];
 
@@ -222,4 +232,125 @@ const Blogr = [
   //   title: "The modern view on digital products",
   // },
 ]
-export { NavLinks, Ipsum, Statistics, Expertises, ServicesCard, ProcessCard, Blogr };
+
+const aboutImages = [
+  {
+    id: 1,
+    image: aboutImage1,
+    image2: "",
+  },
+  {
+    id: 2,
+    image: aboutImage2,
+    image2: "",
+  },
+  {
+    id: 3,
+    image: aboutImage3,
+    image2: aboutShape,
+  },
+]
+
+const footerLinks = [
+  {
+    id: 1, 
+    text: "Home",
+  },
+  {
+    id: 2, 
+    text: "Service",
+  },
+  {
+    id: 3, 
+    text: "Company",
+  },
+  {
+    id: 4, 
+    text: "Career",
+  },
+  {
+    id: 5, 
+    text: "News",
+  },
+]
+
+const footerLinks1 = [
+  {
+    id: 1, 
+    title: "Service",
+    text: "Technical Support",
+  },
+  {
+    id: 2, 
+    text: "Testing",
+  },
+  {
+    id: 3, 
+    text: "Development",
+  },
+  {
+    id: 4, 
+    text: "AWS/Azure",
+  },
+  {
+    id: 5, 
+    text: "Consulting",
+  },
+  {
+    id: 6, 
+    text: "Information Technology",
+  },
+]
+
+const footerLinks2 = [
+  {
+    id: 1, 
+    title: "Resources",
+    text: "About Us",
+  },
+  {
+    id: 2, 
+    text: "Testimonial",
+  },
+  {
+    id: 3, 
+    text: "Privacy Policy",
+  },
+  {
+    id: 4, 
+    text: "Terms of use",
+  },
+  {
+    id: 5, 
+    text: "Blog",
+  },
+]
+
+const socials = [
+  {
+    id: 1,
+    link: "https://twitter.com/swift_fingers_",
+    title: "facebook",
+    image: facebook,
+  },
+  {
+    id: 2,
+    link: "https://twitter.com/swift_fingers_",
+    title: "twitter",
+    image: twitter,
+  },
+  {
+    id: 3,
+    link: "https://instagram.com/danie_swift_",
+    title: "instagram",
+    image: instagram,
+  },
+  {
+    id: 4,
+    link: "https://linkedln.com/daniel-ojeyomi",
+    title: "linkedln",
+    image: linkedln,
+  },
+]
+
+export { NavLinks, Ipsum, Statistics, Expertises, ServicesCard, ProcessCard, Blogr, footerLinks, footerLinks1, footerLinks2, socials, aboutImages };

@@ -36,8 +36,8 @@ const Process = () => {
         <div className="team-members mt-5 md:mt-10 flex gap-5 md:gap-10 items-center justify-center flex-wrap  ">
           {ProcessCard.map((service, index) => (
             <div className=" flex flex-col items-center  justify-center bg-white border border-veryLightBlack  px-7 w-full relative xs:w-[395px]  h-[270px]  ss:h-[174px] sm:h-[164px] ">
-              <img src={service.shape} alt=""  className="absolute  bottom-[-9px] w-full"/>
-              <img src={service.shape2} alt=""  className="absolute  top-[-9px] w-full"/>
+              <img src={service.shape} alt=""  className="absolute  bottom-[-7px] w-full"/>
+              <img src={service.shape2} alt=""  className="absolute  top-[-7px]  w-full"/>
               <div className="font-poppins font-bold text-[24px] leading-[32px] text-veryLightBlack2 absolute right-5 top-3">{service.number}</div>
              <div className=" flex flex-col items-start  justify-center ss:gap-5 ss:flex-row w-fit flex flex-col items-start ss:items-start w-full ">
              <div className="">

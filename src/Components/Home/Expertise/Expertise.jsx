@@ -3,7 +3,7 @@ import styles, { layout } from "../../../styles";
 
 const Expertise = () => {
   return (
-    <section className="py-10 bg-lightCyan">
+    <section className="py-20 bg-lightCyan">
       <div className={` ${styles.boxWidth} ${styles.padding} `}>
         <div
           className={`${layout.section2} about-us ${styles.flexStartB} md:items-start gap-10 md:gap-10`}
@@ -24,9 +24,11 @@ const Expertise = () => {
               unsatiable saw his giving Remain expense you position concluded.
             </p>
           </div>
-          <div className="expertise-others flex flex-wrap items-center justify-center md:flex-row lg:flex-col mx-auto gap-5 md:gap-7 ">
+          <div className="expertise-others relative flex flex-wrap items-center justify-center md:flex-row lg:flex-col mx-auto gap-5 md:gap-3 ">
+          <div className="absolute xl:top-[-20px] left-0 xl:w-[16px] h-[16px] bg-lightBlue " />
             {Expertises.map((item, index) => (
-              <div className="bg-white flex flex-row items-center w-full mx-auto xs:w-[330px] ss:w-[405px] sm:w-[350px]  lg:w-[515px] mx-auto  h-[250px] lg:h-[140px] px-8">
+              <div className="bg-white flex flex-row  relative items-center w-full mx-auto xs:w-[330px] ss:w-[405px] sm:w-[350px]  lg:w-[515px] mx-auto  h-[250px] lg:h-[140px] px-8">
+                <img src={item.shape} alt="" className="absolute left-0 bottom-[-9px]" />
                <div className="flex flex-col lg:flex-row  gap-5">
                <div className="image">
                     <img src={item.image} alt="" className="md:w-[47px]   "/>

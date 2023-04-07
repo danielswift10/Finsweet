@@ -4,7 +4,7 @@ import styles, { layout } from "../../../styles";
 const Review = () => {
     return ( 
         <section className="py-20 bg-lightPurple">
-            <div className={`${styles.boxWidth} ${styles.padding} ${layout.section1} relative items-center justify-between gap-10`}>
+            <div className={`${styles.boxWidth} ${styles.padding} ${layout.section1} relative items-center justify-between gap-20`}>
                 <div className="absolute top-[-10px] left-[30px] ss:left-[40px] md:left-[65px] xl:left-0  md:top-5 w-[16px] h-[16px] bg-lightBlue "/>
                 <div className="review-1">
                     <h2 className={`${styles.heading2} text-black xl:w-[492px] text-[30px] sm:text-[35px] lg:text-[40px] md:w-[502px] mb-2 `}>Our customers love what we do</h2>
@@ -20,6 +20,7 @@ const Review = () => {
                         <span className="text-[12px] leading-[16px] ">Customer Reviews</span>
                     </p>
                 </div>
+
                 <div className="review-2 bg-white p-10 relative xs:w-[410px] md:w-[507px] lg:w-[607px] md:h-[340px]  xl:p-0 flex items-center justify-center">
                     <img src={reviewShape} className="absolute left-[-15px]" alt="" />
                     <img src={quote} className="absolute top-[-10px] md:top-[-15px] right-6 md:right-10 w-[33px] md:w-[43px]"  alt="" />

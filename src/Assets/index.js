@@ -42,8 +42,28 @@ import newsLetterShape from "./icons/newsletter-shapes.png"
 import processShape from "./icons/processShape.png"
 import aboutShape from "./icons/about-us-shapes.png"
 import newsLetterShape1 from "./icons/newsletter-shape.png" 
+import footerShapes from "./icons/footer-shapes.png"
+import contactShape from "./icons/contact-shape.png"
+import logoDark from "./icons/logo-dark.svg"
+import facebook from "./icons/facebook.png"
+import twitter from "./icons/twitter.png"
+import instagram from "./icons/instagram.png"
+import linkedln from "./icons/linkedln.png"
+import expertiseShape from "./icons/expertise-shape.png"
+import heroShapeL from "./icons/hero-shape-left.png"
+import heroShapeR from "./icons/hero-shape-right.png"
 
 export {
+    heroShapeL,
+    heroShapeR,
+    expertiseShape,
+    facebook,
+    twitter,
+    instagram,
+    linkedln,
+    logoDark,
+    contactShape,
+    footerShapes,
     newsLetterShape1,
     aboutShape,
     processShape,

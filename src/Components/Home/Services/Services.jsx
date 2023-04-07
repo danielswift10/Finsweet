@@ -5,7 +5,7 @@ import styles, { layout } from "../../../styles";
 
 const Services = () => {
   return (
-    <section className="bg-chalk py-10 ">
+    <section className="bg-chalk py-20 ">
       <div className={` ${styles.boxWidth} ${styles.padding} `}>
         <div
           className={`${layout.sectionCol} about-us ${styles.flexStartB} md:items-start gap-10 md:gap-10`}
