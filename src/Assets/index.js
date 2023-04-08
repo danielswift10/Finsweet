@@ -61,8 +61,47 @@ import aws from "./images/aws.png"
 import consulting from "./images/consulting.png"
 import infoTech from "./images/information-technology.png"
 
+import ipsumDark1 from "./icons/ipsumDark-1.png"
+import ipsumDark2 from "./icons/ipsumDark-2.png"
+import ipsumDark3 from "./icons/ipsumDark-3.png"
+import ipsumDark4 from "./icons/ipsumDark-4.png"
+import ipsumDark5 from "./icons/ipsumDark-5.png"
+
+import visionImage from "./images/vision-image.png"
+
+import team1 from "./images/team-1.png"
+import team2 from "./images/team-2.png"
+import team3 from "./images/team-3.png"
+import team4 from "./images/team-4.png"
+import team5 from "./images/team-5.png"
+import team6 from "./images/team-6.png"
+import team7 from "./images/team-7.png"
+import team8 from "./images/team-8.png"
+
+import twitterLight from "./icons/twitter-light.png"
+import linkedlnLight from "./icons/linkedln-light.png"
+import instagramLight from "./icons/instagram-light.png"
+
+
 
 export {
+    twitterLight,
+    linkedlnLight,
+    instagramLight,
+    team1,
+    team2,
+    team3,
+    team4,
+    team5,
+    team6,
+    team7,
+    team8,
+    visionImage,
+    ipsumDark1,
+    ipsumDark2,
+    ipsumDark3,
+    ipsumDark4,
+    ipsumDark5,
     ArrowWhite,
     technicalSupport, 
     develop,

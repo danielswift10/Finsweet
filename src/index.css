@@ -13,3 +13,15 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
+
+.career{
+  background-image: url("./Assets/images/career-image.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

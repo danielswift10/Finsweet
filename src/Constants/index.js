@@ -18,24 +18,40 @@ import {
   facebook,
   infoTech,
   instagram,
+  instagramLight,
   ipsum1,
   ipsum2,
   ipsum3,
   ipsum4,
   ipsum5,
+  ipsumDark1,
+  ipsumDark2,
+  ipsumDark3,
+  ipsumDark4,
+  ipsumDark5,
   line,
   linkedln,
+  linkedlnLight,
   maintenance,
   processShape,
   quality,
   statShapes,
   support,
   supportAssist,
+  team1,
+  team2,
+  team3,
+  team4,
+  team5,
+  team6,
+  team7,
+  team8,
   technicalSupport,
   testing,
   testingg,
   timeDelivery,
   twitter,
+  twitterLight,
 } from "../Assets";
 
 const NavLinks = [
@@ -396,4 +412,222 @@ const services = [
   },
 ]
 
-export { NavLinks, Ipsum, Statistics, Expertises, ServicesCard, services, ProcessCard, Blogr, footerLinks, footerLinks1, footerLinks2, socials, aboutImages };
+const clients = [
+  {
+    id: 1,
+    image: ipsumDark1,
+  },
+  {
+    id: 2,
+    image: ipsumDark2,
+  },
+  {
+    id: 3,
+    image: ipsumDark3,
+  },
+  {
+    id: 4,
+    image: ipsumDark4,
+  },
+  {
+    id: 5,
+    image: ipsumDark5,
+  },
+]
+
+const TeamData = [
+  {
+    id: 1,
+    name: "Javena Melo",
+    role: "Support Assist",
+    socials: [
+      {
+        socialImage: twitterLight
+      },
+      {
+        socialImage: linkedlnLight
+      },
+      {
+        socialImage: instagramLight
+      },
+    ],
+    image: team1,
+  },
+  {
+    id: 2,
+    name: "Javena Melo",
+    role: "Support Assist",
+    socials: [
+      {
+        socialImage: twitterLight
+      },
+      {
+        socialImage: linkedlnLight
+      },
+      {
+        socialImage: instagramLight
+      },
+    ],
+    image: team2,
+  },
+  {
+    id: 3,
+    name: "Javena Melo",
+    role: "Support Assist",
+    socials: [
+      {
+        socialImage: twitterLight
+      },
+      {
+        socialImage: linkedlnLight
+      },
+      {
+        socialImage: instagramLight
+      },
+    ],
+    image: team3,
+  },
+  {
+    id: 4,
+    name: "Javena Melo",
+    role: "Support Assist",
+    socials: [
+      {
+        socialImage: twitterLight
+      },
+      {
+        socialImage: linkedlnLight
+      },
+      {
+        socialImage: instagramLight
+      },
+    ],
+    image: team4,
+  },
+  {
+    id: 5,
+    name: "Javena Melo",
+    role: "Support Assist",
+    socials: [
+      {
+        socialImage: twitterLight
+      },
+      {
+        socialImage: linkedlnLight
+      },
+      {
+        socialImage: instagramLight
+      },
+    ],
+    image: team5,
+  },
+  {
+    id: 6,
+    name: "Javena Melo",
+    role: "Support Assist",
+    socials: [
+      {
+        socialImage: twitterLight
+      },
+      {
+        socialImage: linkedlnLight
+      },
+      {
+        socialImage: instagramLight
+      },
+    ],
+    image: team6,
+  },
+  {
+    id: 7,
+    name: "Javena Melo",
+    role: "Support Assist",
+    socials: [
+      {
+        socialImage: twitterLight
+      },
+      {
+        socialImage: linkedlnLight
+      },
+      {
+        socialImage: instagramLight
+      },
+    ],
+    image: team7,
+  },
+  {
+    id: 8,
+    name: "Javena Melo",
+    role: "Support Assist",
+    socials: [
+      {
+        socialImage: twitterLight
+      },
+      {
+        socialImage: linkedlnLight
+      },
+      {
+        socialImage: instagramLight
+      },
+    ],
+    image: team8,
+  },
+]
+
+const position = [
+  {
+    id: 1,
+    role: "Full Stack Developer",
+    mode: "Bengaluru · Full Time ",
+    salary: "$10K - $18K · No equity",
+  },
+  {
+    id: 2,
+    role: "Testing Engineer",
+    mode: "Remote · Full Time ",
+    salary: "$08K - $10K · No equity",
+  },
+  {
+    id: 3,
+    role: "Hr Manager",
+    mode: "Mumbai . Fultime ",
+    salary: "$08K - $10K · 4 to 5 Yrs Exp",
+  },
+  {
+    id: 4,
+    role: "Product Designer",
+    mode: "Mumbai . Fultime ",
+    salary: "$08K - $10K · 4 to 5 Yrs Exp",
+  },
+  {
+    id: 5,
+    role: "Wordpress Developer",
+    mode: "Mumbai . Fultime ",
+    salary: "$08K - $10K · 4 to 5 Yrs Exp",
+  },
+  {
+    id: 6,
+    role: "Jr. QA Tester",
+    mode: "California, USA . Full Time",
+    salary: "$14K - $23K · No equity",
+  },
+  {
+    id: 7,
+    role: "Full Stack Developer",
+    mode: "Bengaluru · Full Time ",
+    salary: "$10K - $18K · No equity",
+  },
+  {
+    id: 8,
+    role: "Full Stack Developer",
+    mode: "Bengaluru · Full Time ",
+    salary: "$10K - $18K · No equity",
+  },
+  {
+    id: 9,
+    role: "Full Stack Developer",
+    mode: "Bengaluru · Full Time ",
+    salary: "$10K - $18K · No equity",
+  },
+]
+export { NavLinks, Ipsum, Statistics, TeamData, clients, Expertises, ServicesCard, services, ProcessCard, Blogr, footerLinks, footerLinks1, footerLinks2, socials, aboutImages };

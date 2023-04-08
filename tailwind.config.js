@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         black: "#232536",
+        teamBg: "#232536f2",
         veryDimBlack: "#22243499",
         veryLightBlack: "#2325362B",
         veryLightBlack2: "#22243433",
