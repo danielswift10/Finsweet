@@ -4,8 +4,8 @@ import { Home, Service } from "./Pages";
 
 const App = () => (
   <div className="App">
-    <Navbar/>
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Home title="Finsweet | Home"/>} />
         <Route path="/service" element={<Service title="Finsweet | Service"/>} />

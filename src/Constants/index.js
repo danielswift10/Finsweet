@@ -36,26 +36,32 @@ import {
 const NavLinks = [
   {
     id: "home",
+    to: "/",
     title: "Home",
   },
   {
     id: "service",
+    to: "/service",
     title: "Service",
   },
   {
     id: "company",
+    to: "/company",
     title: "Company",
   },
   {
     id: "career",
+    to: "/career",
     title: "Career",
   },
   {
     id: "blog",
+    to: "/blog",
     title: "Blog",
   },
   {
     id: "contact",
+    to: "/contact",
     title: "Contact us",
   },
 ];

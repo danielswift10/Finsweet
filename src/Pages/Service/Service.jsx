@@ -1,9 +1,20 @@
-const Service = () => {
-    return ( 
-        <div>
-            
-        </div>
-     );
-}
- 
+import { useEffect } from "react";
+import {
+  Process,
+  Services,
+} from "../../Components/Home";
+
+const Service = (props) => {
+  useEffect(() => {
+    document.title = props.title || "";
+  }, [props.title]);
+
+  return (
+    <div className="">
+      <Services />
+      <Process />
+    </div>
+  );
+};
+
 export default Service;

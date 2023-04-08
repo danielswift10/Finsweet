@@ -2,6 +2,7 @@ import styles from "../../styles"
 import { useEffect, useRef, useState } from "react";
 import { arrowRight, close, logo, menu } from "../../Assets";
 import { NavLinks } from "../../Constants";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [active, setActive] = useState("");
@@ -63,9 +64,7 @@ const Navbar = () => {
             {NavLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`cursor-pointer font-poppins py-7 font-semibold text-[16px] ${
-                  active === nav.title ? "text-white border-t-[3px] pt-[25px] border-t-orange " : "text-gray"
-                } 
+                className={`cursor-pointer font-poppins py-7  font-semibold text-[16px] ${active === nav.title ? "text-white border-t-[3px] pt-[25px] border-t-orange pointer-events-none " : "text-gray  hover:text-white"}
                                 ${
                                   index === NavLinks.length 
                                     ? "mr-0"
@@ -73,9 +72,9 @@ const Navbar = () => {
                                 }`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`} className="">
+                <NavLink to={`${nav.to}`} className="">
                   {nav.title}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
