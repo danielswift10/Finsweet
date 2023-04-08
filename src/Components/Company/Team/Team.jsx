@@ -3,10 +3,15 @@ import { TeamData } from "../../../Constants";
 import styles from "../../../styles";
 
 const Team = () => {
-    const [show, setShow] = useState(false);
-    const handleShow = (event) => {
-        setShow(true);
-    }
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
   return (
     <section className="">
       <div className={` ${styles.boxWidth} ${styles.padding} `}>
@@ -27,19 +32,34 @@ const Team = () => {
             {
                 TeamData.map((team, index) => (
                     <div className="relative" >
-                        <img  src={team.image} alt="team" className="" onClick={handleShow} />
-                        <div key={team.id} className={`${show === team.id ? "flex" : " hidden "} team-info px-[60px] bg-teamBg absolute flex flex-col justify-end pb-14 z-10 w-[320px] h-[320px] top-0`}>
-                            <h4 className={`${styles.heading4} mb-3 text-white`}>{team.name}</h4>
-                            <p className={`${styles.paragraphSmall} mb-6 text-white`}>{team.role}</p>
-                            <div className="flex gap-6 ">
-                            {
-                                team.socials.map((social, index) => (
-                                    <img src={social.socialImage} alt="social" className=" w-fit" />
-                                ))
-                            }
+                        <img  src={team.image} alt="team" className="" 
+                         onClick={() => handleMouseEnter(index)}
+                        //  onMouseLeave={handleMouseLeave} 
+                         />
+                        {
+                          hoveredIndex === index && (
+                            <div className="team-info px-[60px] bg-teamBg absolute flex flex-col justify-end pb-14 z-10 w-[320px] h-[320px] top-0">
+                              <h4 className={`${styles.heading4} mb-3 text-white`}>
+                                {team.name}
+                              </h4>
+                              <p
+                                className={`${styles.paragraphSmall} mb-6 text-white`}
+                              >
+                                {team.role}
+                              </p>
+                              <div className="flex gap-6 ">
+                                {team.socials.map((social, index) => (
+                                  <img
+                                    key={index}
+                                    src={social.socialImage}
+                                    alt="social"
+                                    className=" w-fit"
+                                  />
+                                ))}
+                              </div>
                             </div>
-
-                        </div>
+                          )}
+                        
                     </div>
                 ))
             }

@@ -1,6 +1,7 @@
 import styles from "../../../styles";
 import { position } from "../../../Constants";
 import { arrowRightDark } from "../../../Assets";
+import { Link, NavLink } from "react-router-dom";
 
 const Positions = () => {
   return (
@@ -21,13 +22,13 @@ const Positions = () => {
               <p className={`${styles.paragraph} text-veryDimBlack`}>{item.salary}</p>
              </div>
              <div>
-             <a
-                href="#about"
+             <NavLink
+                to={item.to}
                 className={`read-more gap-3 text-primary flex items-center  font-poppins font-semibold text-[16px] leading-[24px] `}
               >
                 Apply Now
                 <img src={arrowRightDark} alt="" />
-              </a>
+              </NavLink>
              </div>
              </div>
             </div>

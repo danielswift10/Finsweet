@@ -6,7 +6,7 @@ const CareerHero = () => {
     <section className="py-20 mt-[60px]">
       <div className={` ${styles.boxWidth} ${styles.padding} `}>
         <div
-          className={`flex flex-row mb-[50px] ${styles.flexStartB} md:items-start gap-3 sm:gap-0 md:gap-10`}
+          className={`flex flex-row mb-[0px] ${styles.flexStartB} md:items-start gap-3 sm:gap-0 md:gap-10`}
         >
           <div className="relative text-center  flex-1">
             <p className={`${styles.caption} mb-7`}>CAREER AT FINSWEET</p>
@@ -31,7 +31,7 @@ const CareerHero = () => {
         </div>
 
         <div className=""> 
-            <h1 className={`career text-[80px]  font-poppins  font-bold w-full xl:text-[186px]  xl:leading-[135px]  text-center text-black`}>Careers</h1>
+            <h1 className={`career text-[4.5rem] xs:text-[6rem] ss:text-[8rem] sm:text-[10rem] smd:text-[11rem] md:text-[13rem]  font-poppins  font-[900] w-full lg:text-[16rem]  xl:text-[266px]  xl:leading-[195px]  text-center text-black`}>Careers</h1>
         </div>
       </div>
     </section>

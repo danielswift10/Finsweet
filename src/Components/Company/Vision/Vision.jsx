@@ -8,7 +8,7 @@ const Vision = () => {
         <div className="content mb-[50px]">
           <p className={`${styles.caption} mb-3`}>OUR VISION</p>
           <h3
-            className={`${styles.aheading3} text-[30px] sm:text-[35px] mb-5 lg:text-[40px]  xl:w-[701px] smd:w-[700px] md:w-[800px]  text-black`}
+            className={`${styles.heading3} text-[30px] sm:text-[35px] mb-5 lg:text-[40px]  xl:w-[701px] smd:w-[700px] md:w-[800px]  text-black`}
           >
             We want to get local identification in every corner of the world in
             this era of global citizenship.
