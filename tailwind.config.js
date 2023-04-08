@@ -16,6 +16,7 @@ module.exports = {
         lightBlue: "#666DFF",
         orange: "#FFA155",
         lightOrange: "#FFD3AF",
+        lightOrange2: "#FFD3AF91",
         primary: "#444CFC",
         lightCyan: "#ECF8F9",
         chalk: "#FFE6D2",

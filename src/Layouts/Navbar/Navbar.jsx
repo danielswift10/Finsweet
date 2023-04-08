@@ -114,11 +114,11 @@ const Navbar = () => {
                     active === nav.title ? "text-white" : "text-white"
                   }
                         ${index === NavLinks.length - 1 ? "mr-0" : "mr-10"} `}
-                  onClick={() => setToggle(false)}
+                        onClick={() => {setActive(nav.title); setToggle(false);}}
                 >
-                  <a href={`#${nav.id}`} className="">
-                    {nav.title}
-                  </a>
+                   <NavLink to={`${nav.to}`} className="">
+                  {nav.title}
+                </NavLink>
                 </li>
               ))}
             </ul>
