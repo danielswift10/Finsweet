@@ -3,16 +3,20 @@ import {
   aboutImage2,
   aboutImage3,
   aboutShape,
+  aws,
   blog1,
   blog2,
+  consulting,
   deployment,
   designing,
   dev,
+  develop,
   development,
   devv,
   discover,
   expertiseShape,
   facebook,
+  infoTech,
   instagram,
   ipsum1,
   ipsum2,
@@ -27,6 +31,7 @@ import {
   statShapes,
   support,
   supportAssist,
+  technicalSupport,
   testing,
   testingg,
   timeDelivery,
@@ -231,12 +236,6 @@ const Blogr = [
     date: "Jan 19, 2023",
     title: "A practical guide to building a brand strategy",
   },
-  // {
-  //   id: 3,
-  //   image: blog1,
-  //   date: "Jan 19, 2023",
-  //   title: "The modern view on digital products",
-  // },
 ]
 
 const aboutImages = [
@@ -359,4 +358,42 @@ const socials = [
   },
 ]
 
-export { NavLinks, Ipsum, Statistics, Expertises, ServicesCard, ProcessCard, Blogr, footerLinks, footerLinks1, footerLinks2, socials, aboutImages };
+const services = [
+  {
+    id: 1,
+    caption: "Technical Support",
+    title: "Best in class tech support for your company. We become your tech backbone ",
+    content: "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
+    image: technicalSupport,
+  },
+  {
+    id: 2,
+    caption: "Developoment",
+    title: "Bring your ideas to reality with certified team of developers, working with latest technologies  ",
+    content: "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
+    image: develop,
+  },
+  {
+    id: 3,
+    caption: "AWS/Azure ",
+    title: "We help you deploy, manage and secure your application on leading web services",
+    content: "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
+    image: aws,
+  },
+  {
+    id: 4,
+    caption: "Consulting",
+    title: "Get advice from world class professionals ",
+    content: "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
+    image: consulting,
+  },
+  {
+    id: 5,
+    caption: "Information Technology",
+    title: "We want to get local identification in every corner of the world in this era of global citizenship.",
+    content: "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
+    image: infoTech,
+  },
+]
+
+export { NavLinks, Ipsum, Statistics, Expertises, ServicesCard, services, ProcessCard, Blogr, footerLinks, footerLinks1, footerLinks2, socials, aboutImages };

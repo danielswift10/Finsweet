@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import {
   Process,
   Services,
-} from "../../Components/Home";
+} from "../../Components/Service";
 
 const Service = (props) => {
   useEffect(() => {

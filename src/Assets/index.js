@@ -53,7 +53,21 @@ import expertiseShape from "./icons/expertise-shape.png"
 import heroShapeL from "./icons/hero-shape-left.png"
 import heroShapeR from "./icons/hero-shape-right.png"
 
+
+//Services
+import technicalSupport from "./images/technical-support.png"
+import develop from "./images/development.png"
+import aws from "./images/aws.png"
+import consulting from "./images/consulting.png"
+import infoTech from "./images/information-technology.png"
+
+
 export {
+    technicalSupport, 
+    develop,
+    aws,
+    consulting,
+    infoTech,
     heroShapeL,
     heroShapeR,
     expertiseShape,
