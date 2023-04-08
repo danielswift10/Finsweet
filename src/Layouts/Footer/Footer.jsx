@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import {
   arrowRightDark,
   contactShape,
@@ -103,7 +104,9 @@ const Footer = () => {
                     <li
                       className={`${styles.paragraphSmall} leading-[35px] md:leading-[35px]`}
                     >
-                      {item.text}
+                      <NavLink to={`${item.to}`} className="">
+                        {item.text}
+                      </NavLink>
                     </li>
                   </>
                 ))}

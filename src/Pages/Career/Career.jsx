@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { CareerHero, Positions } from "../../Components/Career";
+import { CareerHero, Positions, WorkCulture } from "../../Components/Career";
 
 const Career = (props) => {
     useEffect(() => {
@@ -10,6 +10,7 @@ const Career = (props) => {
       <div className="">
        <CareerHero/>
        <Positions/>
+       <WorkCulture/>
       </div>
     );
   };

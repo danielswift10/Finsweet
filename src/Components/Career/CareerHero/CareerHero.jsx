@@ -9,7 +9,7 @@ const CareerHero = () => {
           className={`flex flex-row mb-[50px] ${styles.flexStartB} md:items-start gap-3 sm:gap-0 md:gap-10`}
         >
           <div className="relative text-center  flex-1">
-            <p className={`${styles.caption} mb-3`}>CAREER AT FINSWEET</p>
+            <p className={`${styles.caption} mb-7`}>CAREER AT FINSWEET</p>
             <h2
               className={`${styles.heading2}  text-[30px] sm:text-[35px] mx-auto mb-5 lg:text-[40px]  xl:w-[624px] smd:w-[700px]  text-black`}
             >

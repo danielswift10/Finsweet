@@ -1,3 +1,5 @@
+import privacyShape from "./icons/privacy-shape.png"
+
 import menu from "./icons/menu.svg"
 import close from "./icons/close.svg"
 import logo from "./icons/logo.svg"
@@ -82,9 +84,23 @@ import twitterLight from "./icons/twitter-light.png"
 import linkedlnLight from "./icons/linkedln-light.png"
 import instagramLight from "./icons/instagram-light.png"
 
+import covid from "./icons/covid.png"
+import timee from "./icons/time.png"
+import home from "./icons/home.png"
+import retreats from "./icons/retreats.png"
+import stipend from "./icons/stipend.png"
+import gym from "./icons/gym.png"
+
 
 
 export {
+    privacyShape,
+    covid,
+    timee,
+    home,
+    retreats,
+    stipend,
+    gym,
     twitterLight,
     linkedlnLight,
     instagramLight,

@@ -7,6 +7,7 @@ import {
   blog1,
   blog2,
   consulting,
+  covid,
   deployment,
   designing,
   dev,
@@ -16,6 +17,8 @@ import {
   discover,
   expertiseShape,
   facebook,
+  gym,
+  home,
   infoTech,
   instagram,
   instagramLight,
@@ -35,7 +38,9 @@ import {
   maintenance,
   processShape,
   quality,
+  retreats,
   statShapes,
+  stipend,
   support,
   supportAssist,
   team1,
@@ -50,6 +55,7 @@ import {
   testing,
   testingg,
   timeDelivery,
+  timee,
   twitter,
   twitterLight,
 } from "../Assets";
@@ -158,7 +164,7 @@ const Expertises = [
     title: "Support Assist",
     content:
       "Through True Rich Attended does no end it his mother since real had half every him.",
-      shape: expertiseShape,
+    shape: expertiseShape,
   },
 ];
 
@@ -186,12 +192,13 @@ const ServicesCard = [
   },
 ];
 
-const ProcessCard = [ 
+const ProcessCard = [
   {
     id: 1,
     image: discover,
     title: "Discover",
-    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    content:
+      "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "01",
     lined: line,
     shape: processShape,
@@ -200,7 +207,8 @@ const ProcessCard = [
     id: 2,
     image: designing,
     title: "Designing",
-    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    content:
+      "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "02",
     lined: line,
   },
@@ -208,7 +216,8 @@ const ProcessCard = [
     id: 3,
     image: devv,
     title: "Development",
-    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    content:
+      "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "03",
     // lined: line,
   },
@@ -216,7 +225,8 @@ const ProcessCard = [
     id: 4,
     image: testingg,
     title: "Testing",
-    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    content:
+      "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "04",
     lined: line,
   },
@@ -224,7 +234,8 @@ const ProcessCard = [
     id: 5,
     image: deployment,
     title: "Deployment",
-    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    content:
+      "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "05",
     lined: line,
   },
@@ -232,12 +243,13 @@ const ProcessCard = [
     id: 6,
     image: maintenance,
     title: "Maintenance",
-    content: "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
+    content:
+      "We aim to attain the greatest satisfaction for our clients and be one of the prominent.",
     number: "06",
     shape2: processShape,
     // lined: line,
   },
-]
+];
 
 const Blogr = [
   {
@@ -252,7 +264,7 @@ const Blogr = [
     date: "Jan 19, 2023",
     title: "A practical guide to building a brand strategy",
   },
-]
+];
 
 const aboutImages = [
   {
@@ -270,82 +282,83 @@ const aboutImages = [
     image: aboutImage3,
     image2: aboutShape,
   },
-]
+];
 
 const footerLinks = [
   {
-    id: 1, 
+    id: 1,
     text: "Home",
   },
   {
-    id: 2, 
+    id: 2,
     text: "Service",
   },
   {
-    id: 3, 
+    id: 3,
     text: "Company",
   },
   {
-    id: 4, 
+    id: 4,
     text: "Career",
   },
   {
-    id: 5, 
+    id: 5,
     text: "News",
   },
-]
+];
 
 const footerLinks1 = [
   {
-    id: 1, 
+    id: 1,
     title: "Service",
     text: "Technical Support",
   },
   {
-    id: 2, 
+    id: 2,
     text: "Testing",
   },
   {
-    id: 3, 
+    id: 3,
     text: "Development",
   },
   {
-    id: 4, 
+    id: 4,
     text: "AWS/Azure",
   },
   {
-    id: 5, 
+    id: 5,
     text: "Consulting",
   },
   {
-    id: 6, 
+    id: 6,
     text: "Information Technology",
   },
-]
+];
 
 const footerLinks2 = [
   {
-    id: 1, 
+    id: 1,
     title: "Resources",
     text: "About Us",
   },
   {
-    id: 2, 
+    id: 2,
     text: "Testimonial",
   },
   {
-    id: 3, 
+    id: 3,
+    to: "/privacy-policy",
     text: "Privacy Policy",
   },
   {
-    id: 4, 
+    id: 4,
     text: "Terms of use",
   },
   {
-    id: 5, 
+    id: 5,
     text: "Blog",
   },
-]
+];
 
 const socials = [
   {
@@ -372,45 +385,54 @@ const socials = [
     title: "linkedln",
     image: linkedln,
   },
-]
+];
 
 const services = [
   {
     id: 1,
     caption: "Technical Support",
-    title: "Best in class tech support for your company. We become your tech backbone ",
-    content: "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
+    title:
+      "Best in class tech support for your company. We become your tech backbone ",
+    content:
+      "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
     image: technicalSupport,
   },
   {
     id: 2,
     caption: "Developoment",
-    title: "Bring your ideas to reality with certified team of developers, working with latest technologies  ",
-    content: "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
+    title:
+      "Bring your ideas to reality with certified team of developers, working with latest technologies  ",
+    content:
+      "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
     image: develop,
   },
   {
     id: 3,
     caption: "AWS/Azure ",
-    title: "We help you deploy, manage and secure your application on leading web services",
-    content: "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
+    title:
+      "We help you deploy, manage and secure your application on leading web services",
+    content:
+      "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
     image: aws,
   },
   {
     id: 4,
     caption: "Consulting",
     title: "Get advice from world class professionals ",
-    content: "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
+    content:
+      "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
     image: consulting,
   },
   {
     id: 5,
     caption: "Information Technology",
-    title: "We want to get local identification in every corner of the world in this era of global citizenship.",
-    content: "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
+    title:
+      "We want to get local identification in every corner of the world in this era of global citizenship.",
+    content:
+      "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
     image: infoTech,
   },
-]
+];
 
 const clients = [
   {
@@ -433,7 +455,7 @@ const clients = [
     id: 5,
     image: ipsumDark5,
   },
-]
+];
 
 const TeamData = [
   {
@@ -442,13 +464,13 @@ const TeamData = [
     role: "Support Assist",
     socials: [
       {
-        socialImage: twitterLight
+        socialImage: twitterLight,
       },
       {
-        socialImage: linkedlnLight
+        socialImage: linkedlnLight,
       },
       {
-        socialImage: instagramLight
+        socialImage: instagramLight,
       },
     ],
     image: team1,
@@ -459,13 +481,13 @@ const TeamData = [
     role: "Support Assist",
     socials: [
       {
-        socialImage: twitterLight
+        socialImage: twitterLight,
       },
       {
-        socialImage: linkedlnLight
+        socialImage: linkedlnLight,
       },
       {
-        socialImage: instagramLight
+        socialImage: instagramLight,
       },
     ],
     image: team2,
@@ -476,13 +498,13 @@ const TeamData = [
     role: "Support Assist",
     socials: [
       {
-        socialImage: twitterLight
+        socialImage: twitterLight,
       },
       {
-        socialImage: linkedlnLight
+        socialImage: linkedlnLight,
       },
       {
-        socialImage: instagramLight
+        socialImage: instagramLight,
       },
     ],
     image: team3,
@@ -493,13 +515,13 @@ const TeamData = [
     role: "Support Assist",
     socials: [
       {
-        socialImage: twitterLight
+        socialImage: twitterLight,
       },
       {
-        socialImage: linkedlnLight
+        socialImage: linkedlnLight,
       },
       {
-        socialImage: instagramLight
+        socialImage: instagramLight,
       },
     ],
     image: team4,
@@ -510,13 +532,13 @@ const TeamData = [
     role: "Support Assist",
     socials: [
       {
-        socialImage: twitterLight
+        socialImage: twitterLight,
       },
       {
-        socialImage: linkedlnLight
+        socialImage: linkedlnLight,
       },
       {
-        socialImage: instagramLight
+        socialImage: instagramLight,
       },
     ],
     image: team5,
@@ -527,13 +549,13 @@ const TeamData = [
     role: "Support Assist",
     socials: [
       {
-        socialImage: twitterLight
+        socialImage: twitterLight,
       },
       {
-        socialImage: linkedlnLight
+        socialImage: linkedlnLight,
       },
       {
-        socialImage: instagramLight
+        socialImage: instagramLight,
       },
     ],
     image: team6,
@@ -544,13 +566,13 @@ const TeamData = [
     role: "Support Assist",
     socials: [
       {
-        socialImage: twitterLight
+        socialImage: twitterLight,
       },
       {
-        socialImage: linkedlnLight
+        socialImage: linkedlnLight,
       },
       {
-        socialImage: instagramLight
+        socialImage: instagramLight,
       },
     ],
     image: team7,
@@ -561,18 +583,18 @@ const TeamData = [
     role: "Support Assist",
     socials: [
       {
-        socialImage: twitterLight
+        socialImage: twitterLight,
       },
       {
-        socialImage: linkedlnLight
+        socialImage: linkedlnLight,
       },
       {
-        socialImage: instagramLight
+        socialImage: instagramLight,
       },
     ],
     image: team8,
   },
-]
+];
 
 const position = [
   {
@@ -613,21 +635,79 @@ const position = [
   },
   {
     id: 7,
-    role: "Full Stack Developer",
-    mode: "Bengaluru · Full Time ",
-    salary: "$10K - $18K · No equity",
+    role: "Sr. UX Designer",
+    mode: "California, USA . Full Time ",
+    salary: "$14K - $23K · No equity",
   },
   {
     id: 8,
-    role: "Full Stack Developer",
-    mode: "Bengaluru · Full Time ",
-    salary: "$10K - $18K · No equity",
+    role: "Social Media Manager",
+    mode: "Kolkata, India .  Fulltime ",
+    salary: "$5K - $6K ·  Fresher  ",
   },
   {
     id: 9,
-    role: "Full Stack Developer",
-    mode: "Bengaluru · Full Time ",
-    salary: "$10K - $18K · No equity",
+    role: "Golang Developer",
+    mode: "Mumbai . Fultime",
+    salary: "$08K - $10K · 4 to 5 Yrs Exp",
+  },
+];
+
+const culture = [
+  {
+    id: 1,
+    image: covid,
+    title: "Covid-19 insurance",
+    content: "Through True Rich Attended does no end it his mother since real had halfdoes no end it"
+  },
+  {
+    id: 2,
+    image: timee,
+    title: "Flexible working time",
+    content: "Through True Rich Attended does no end it his mother since real had halfdoes no end it"
+  },
+  {
+    id: 3,
+    image: home,
+    title: "Work from home",
+    content: "Through True Rich Attended does no end it his mother since real had halfdoes no end it"
+  },
+  {
+    id: 4,
+    image: retreats,
+    title: "Annual retreats",
+    content: "Through True Rich Attended does no end it his mother since real had halfdoes no end it"
+  },
+  {
+    id: 5,
+    image: stipend,
+    title: "Learning stipend",
+    content: "Through True Rich Attended does no end it his mother since real had halfdoes no end it"
+  },
+  {
+    id: 6,
+    image: gym,
+    title: "Gym membership",
+    content: "Through True Rich Attended does no end it his mother since real had halfdoes no end it"
   },
 ]
-export { NavLinks, Ipsum, Statistics, TeamData, clients, Expertises, ServicesCard, services, ProcessCard, Blogr, footerLinks, footerLinks1, footerLinks2, socials, aboutImages };
+
+export {
+  NavLinks,
+  Ipsum,
+  culture,
+  Statistics,
+  TeamData,
+  clients,
+  Expertises,
+  position,
+  ServicesCard,
+  services,
+  ProcessCard,
+  Blogr,
+  footerLinks,
+  footerLinks1,
+  footerLinks2,
+  socials,
+  aboutImages,
+};
