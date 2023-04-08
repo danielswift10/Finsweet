@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import {
   Process,
   Services,
+  WhatWeDo,
 } from "../../Components/Service";
 
 const Service = (props) => {
@@ -13,6 +14,7 @@ const Service = (props) => {
     <div className="">
       <Services />
       <Process />
+      <WhatWeDo/>
     </div>
   );
 };
