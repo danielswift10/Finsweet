@@ -4,14 +4,24 @@ import styles from "../../../styles";
 
 const Team = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hideTimeout, setHideTimeout] = useState(null);
+
 
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
+    setHideTimeout(setTimeout(() => {
+      setHoveredIndex(null);
+    }, 500));
   };
+  
 
   const handleMouseLeave = () => {
+    if (hideTimeout) {
+      clearTimeout(hideTimeout);
+    }
     setHoveredIndex(null);
   };
+  
   return (
     <section className="">
       <div className={` ${styles.boxWidth} ${styles.padding} `}>
@@ -33,8 +43,8 @@ const Team = () => {
                 TeamData.map((team, index) => (
                     <div className="relative" >
                         <img  src={team.image} alt="team" className="" 
-                         onClick={() => handleMouseEnter(index)}
-                        //  onMouseLeave={handleMouseLeave} 
+                         onMouseEnter={() => handleMouseEnter(index)}
+                         onMouseLeave={handleMouseLeave} 
                          />
                         {
                           hoveredIndex === index && (

@@ -2,8 +2,11 @@ import styles from "../../../styles";
 import { position } from "../../../Constants";
 import { arrowRightDark } from "../../../Assets";
 import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
+import JobApplication from "../JobApplication/JobApplication";
 
 const Positions = () => {
+    const [selectedPosition, setSelectedPosition] = useState(null);
   return (
     <section className={` ${styles.boxWidth} my-20 ${styles.padding} `}>
       <div className="">
@@ -23,8 +26,9 @@ const Positions = () => {
              </div>
              <div>
              <NavLink
-                to={item.to}
+                // to={item.to}
                 className={`read-more gap-3 text-primary flex items-center  font-poppins font-semibold text-[16px] leading-[24px] `}
+                onClick={() => setSelectedPosition(item)}
               >
                 Apply Now
                 <img src={arrowRightDark} alt="" />
@@ -34,6 +38,9 @@ const Positions = () => {
             </div>
           ))}
         </div>
+        {selectedPosition && (
+        <JobApplication position={selectedPosition} />
+      )}
       </div>
     </section>
   );
