@@ -4,7 +4,7 @@ import styles, { layout } from "../../../styles";
 
 const Process = () => {
   return (
-    <section className="py-10">
+    <section className="py-20">
       <div className={` ${styles.boxWidth} ${styles.padding} `}>
         <div
           className={`flex flex-row about-us ${styles.flexStartB} md:items-start gap-3 sm:gap-0 md:gap-10`}

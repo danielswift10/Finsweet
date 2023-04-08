@@ -1,76 +1,83 @@
-import styles from "../../styles"
+import styles from "../../styles";
 import { useEffect, useRef, useState } from "react";
 import { arrowRight, close, logo, menu } from "../../Assets";
 import { NavLinks } from "../../Constants";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const [active, setActive] = useState("");
-    const [toggle, setToggle] = useState(false);
-    const [scrolled, setScrolled] = useState(false);
-    const ref = useRef(null);
-  
-    useEffect(() => {
-      const handleClickOutside = (event) => {
-        if (ref.current && !ref.current.contains(event.target)) {
-          setToggle(false);
-        }
-      };
-      document.addEventListener("click", handleClickOutside, true);
-      return () => {
-        document.removeEventListener("click", handleClickOutside, true);
-      };
-    }, []);
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollTop = window.scrollY;
-        if (scrollTop > 55) {
-          setScrolled(true);
-        } else {
-          setScrolled(false);
-        }
-      };
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    });
-  
-    useEffect(() => {
-      const handleClickLink = (event) => {
-        if (ref.current && !ref.current.contains(event.target)) {
-          setToggle(false);
-        }
-      };
-      document.addEventListener("click", handleClickLink, true);
-      return () => {
-        document.removeEventListener("click", handleClickLink, true);
-      };
-    });
-    return ( 
-        <nav 
-        className={`${
-          scrolled ? "bg-darkBlue border-b border-b-gray" : "bg-darkBlue"
-        } w-full mx-auto fixed top-0 z-20`}>
-                  <div className={`bg-darkBlue ${styles.flexBetween} ${styles.paddingX} ${styles.boxWidth}`} >
-        <a href="#" className="logo ">
+  const [active, setActive] = useState(NavLinks[0].title);
+  const [toggle, setToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setToggle(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 55) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
+  useEffect(() => {
+    const handleClickLink = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setToggle(false);
+      }
+    };
+    document.addEventListener("click", handleClickLink, true);
+    return () => {
+      document.removeEventListener("click", handleClickLink, true);
+    };
+  });
+  return (
+    <nav
+      className={`${
+        scrolled ? "bg-darkBlue border-b border-b-gray" : "bg-darkBlue"
+      } w-full mx-auto fixed top-0 z-20`}
+    >
+      <div
+        className={`bg-darkBlue ${styles.flexBetween} ${styles.paddingX} ${styles.boxWidth}`}
+      >
+        <Link to={"/"} className="logo ">
           <img
             src={logo}
             alt="talent-assurance"
             className="w-[104px] object-contain md:w-[120px] lg:w-[122px] cursor-pointer "
           />
-        </a>
+        </Link>
         <div className="navbar-links-desk md:flex flex-row hidden justify-end items-center">
           <ul className="flex">
             {NavLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`cursor-pointer font-poppins py-7  font-semibold text-[16px] ${active === nav.title ? "text-white border-t-[3px] pt-[25px] border-t-orange pointer-events-none " : "text-gray  hover:text-white"}
+                className={`cursor-pointer font-poppins py-7  font-semibold text-[16px] ${
+                  active === nav.title
+                    ? "text-white border-t-[3px] pt-[25px] border-t-orange pointer-events-none "
+                    : "text-gray  hover:text-white"
+                }
                                 ${
-                                  index === NavLinks.length 
+                                  index === NavLinks.length
                                     ? "mr-0"
                                     : "mr-[40px] sm:mr-[40px] text-[15px] hover:font-bold hover:text-white lg:text-[17px] lg:leading-[24px]  md:mr-[30px] lg:mr-[50px] "
                                 }`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => {setActive(nav.title); setToggle(false);}}
               >
                 <NavLink to={`${nav.to}`} className="">
                   {nav.title}
@@ -78,20 +85,21 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <a href="#clone" className={`${styles.flexCenter} gap-3 text-lightOrange cursor-pointer`}>Clone project 
+          <a
+            href="#clone"
+            className={`${styles.flexCenter} gap-3 text-lightOrange cursor-pointer`}
+          >
+            Clone project
             <img src={arrowRight} alt="" />
-          </a> 
+          </a>
         </div>
         <div
           className={` ${styles.flexEnd} py-8 navbar-links-mobile md:hidden flex-1 z-[2]`}
           ref={ref}
         >
-          <div
-            className=""
-            onClick={() => setToggle(!toggle)}
-          >
-            {toggle ? <img src={close} alt=""/> : <img src={menu} alt="" />}
-            </div>
+          <div className="" onClick={() => setToggle(!toggle)}>
+            {toggle ? <img src={close} alt="" /> : <img src={menu} alt="" />}
+          </div>
           <div
             className={`${
               !toggle ? "hidden" : "flex"
@@ -116,8 +124,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-        </nav>
-     );
-}
- 
+    </nav>
+  );
+};
+
 export default Navbar;
