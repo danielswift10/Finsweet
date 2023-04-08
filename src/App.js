@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Footer, Navbar } from "./Layouts";
 import { Home, Service } from "./Pages";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
+
 
 const App = () => (
   <div className="App">
@@ -12,6 +14,8 @@ const App = () => (
       </Routes>
     </BrowserRouter>
     <Footer/>
+    <ScrollToTop/>
+    
     
   </div>
 )

@@ -52,7 +52,7 @@ import linkedln from "./icons/linkedln.png"
 import expertiseShape from "./icons/expertise-shape.png"
 import heroShapeL from "./icons/hero-shape-left.png"
 import heroShapeR from "./icons/hero-shape-right.png"
-
+import ArrowWhite from "./icons/arrow-white.png"
 
 //Services
 import technicalSupport from "./images/technical-support.png"
@@ -63,6 +63,7 @@ import infoTech from "./images/information-technology.png"
 
 
 export {
+    ArrowWhite,
     technicalSupport, 
     develop,
     aws,

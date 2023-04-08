@@ -2,10 +2,11 @@ import styles from "../../styles";
 import { useEffect, useRef, useState } from "react";
 import { arrowRight, close, logo, menu } from "../../Assets";
 import { NavLinks } from "../../Constants";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const [active, setActive] = useState(NavLinks[0].title);
+  const location = useLocation();
+  const [active, setActive] = useState(NavLinks.find(navLink => navLink.to === location.pathname)?.title || NavLinks[0].title);
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const ref = useRef(null);
@@ -55,7 +56,7 @@ const Navbar = () => {
       <div
         className={`bg-darkBlue ${styles.flexBetween} ${styles.paddingX} ${styles.boxWidth}`}
       >
-        <Link to={"/"} className="logo ">
+        <Link to={"/"} className="logo " onClick={() => setActive(NavLinks[0].title)}>
           <img
             src={logo}
             alt="talent-assurance"
