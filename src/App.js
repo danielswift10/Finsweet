@@ -12,24 +12,43 @@ const JobApplication = lazy(() =>
   import("./Components/Career/JobApplication/JobApplication")
 );
 
-const App = () => (
-  <div className="App">
-    <BrowserRouter>
-      <Navbar />
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Home title="Finsweet | Home" />} />
-          <Route path="/service" element={<Service title="Finsweet | Service" />} />
-          <Route path="/company" element={<Company title="Finsweet | Company" />} />
-          <Route path="/career" element={<Career title="Finsweet | Career" />} />
-          <Route path="/career/:id" element={<JobApplication title="Finsweet | Career" />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy title="Finsweet | Privacy Policy" />} />
-        </Routes>
-      </Suspense>
-      <Footer />
-      <ScrollToTop />
-    </BrowserRouter>
-  </div>
-);
-
+const App = () => {
+  function handleContextMenu(e) {
+    e.preventDefault(); 
+  }
+  return (
+    <div className="App" onContextMenu={handleContextMenu}>
+      <BrowserRouter>
+        <Navbar />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home title="Finsweet | Home" />} />
+            <Route
+              path="/service"
+              element={<Service title="Finsweet | Service" />}
+            />
+            <Route
+              path="/company"
+              element={<Company title="Finsweet | Company" />}
+            />
+            <Route
+              path="/career"
+              element={<Career title="Finsweet | Career" />}
+            />
+            <Route
+              path="/career/:id"
+              element={<JobApplication title="Finsweet | Career" />}
+            />
+            <Route
+              path="/privacy-policy"
+              element={<PrivacyPolicy title="Finsweet | Privacy Policy" />}
+            />
+          </Routes>
+        </Suspense>
+        <Footer />
+        <ScrollToTop />
+      </BrowserRouter>
+    </div>
+  );
+};
 export default App;
