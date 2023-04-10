@@ -1,16 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 import {
-  aboutImage1,
-  aboutImage2,
-  aboutImage3,
-  aboutShape,
-  arrowRight,
   arrowRightDark,
 } from "../../../Assets";
 import { Statistics, aboutImages } from "../../../Constants";
 import styles, { layout } from "../../../styles";
 
 const About = () => {
+  
   return (
     <section className="py-10">
       <div className={` ${styles.boxWidth} ${styles.padding} `}>
@@ -71,7 +67,7 @@ const About = () => {
           </div>
           <NavLink to={"/company"}
             
-            className={`read-more ${styles.flexCenter} gap-5 text-primary ${styles.textNavLink} `}
+            className={`read-more ${styles.flexCenter} gap-5 text-primary ${styles.textNavNavLink} `}
           >
             Read about us
             <img src={arrowRightDark} alt="" />

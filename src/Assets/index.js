@@ -92,9 +92,13 @@ import retreats from "./icons/retreats.png"
 import stipend from "./icons/stipend.png"
 import gym from "./icons/gym.png"
 
+import closeModal from "./icons/close-modal.png"
+import closeModal2 from "./icons/close-modal.svg"
 
 
 export {
+    closeModal,
+    closeModal2,
     preloaderImage,
     privacyShape,
     covid,

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { arrowRightDark } from "../../../Assets";
 import { ServicesCard } from "../../../Constants";
 import { Button } from "../../../Utils";
@@ -27,10 +28,10 @@ const Services = () => {
                 <img src={service.image} alt="image" className="w-[50px] mb-5 xl:w-[47px] " />
                 <h6 className={`${styles.heading6} mb-1 xs:text-[19px] lg:text-[16px] mb-3 text-secondary `}>{service.title}</h6>
                     <p className={`${styles.paragraph} mb-5 xs:text-[17px] xl:text-[16px] text-gray lg:w-[303px]`}>{service.content}</p>
-                    <a href="#about"  className={`read-more ${styles.flexCenter} gap-3 text-primary font-poppins font-semibold text-[16px] leading-[24px] `}>
+                    <NavLink to={"/service"} className={`read-more ${styles.flexCenter} gap-3 text-primary font-poppins font-semibold text-[16px] leading-[24px] `}>
                         Read more
                         <img src={arrowRightDark} alt="" />
-                    </a>
+                    </NavLink>
               </div>
             ))}
           </div>

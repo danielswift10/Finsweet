@@ -50,13 +50,26 @@ const Navbar = () => {
       document.removeEventListener("click", handleClickLink, true);
     };
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+  
+  
+  useEffect(() => {
+    setActive(
+      NavLinks.find((navLink) => navLink.to === location.pathname)?.title ||
+        NavLinks[0].title
+    );
+  }, [location.pathname]);
+  
   return (
     <nav
       className={`${
         scrolled ? "bg-darkBlue border-b border-b-gray" : "bg-darkBlue"
-      } w-full mx-auto fixed top-0 z-20  `}
+      } w-full mx-auto fixed top-0 z-20 md:px-16 `}
     >
-      <div className={`bg-darkBlue py-7 md:p-0 ${styles.flexBetween} ${styles.paddingX} ${styles.boxWidth}`}>
+      <div className={`bg-darkBlue py-7  md:p-0 ${styles.flexBetween} ${styles.paddingX} ${styles.boxWidth}`}>
        <div className="nav-logo">
        <Link
           to={"/"}

@@ -14,10 +14,17 @@ import {
   socials,
 } from "../../Constants";
 import styles, { layout } from "../../styles";
+import { useState } from "react";
+import {Modal} from "../../Components";
 
 const Footer = () => {
+  const [show, setShow] = useState(false)
+  const handleCloseModal = () => {
+    setShow(false);
+  };
   return (
     <footer className={`mt-20 `}>
+      <Modal onClose={handleCloseModal} onClick={()=>{setShow(false)}} show={show} />
       <div
         className={`${styles.boxWidth}  sm:px-[90px]  px-[50px] xl:px-0  sm:py-12  py-[70px] xl:px-[100px]  lg:h-[333px]   ${layout.section1}  relative md:items-center  justify-between gap-5 bg-lightBlue`}
       >
@@ -115,7 +122,7 @@ const Footer = () => {
             <div className="contact flex items-center gap-3  justify-end mt-[80px] ">
               <img src={contactShape} alt="" />
               <a
-                href="#about"
+                href="#about" onClick={()=>{setShow(true)}}
                 className={`read-more flex items-center gap-3 ${styles.textLink} text-black`}
               >
                 Contact Us
