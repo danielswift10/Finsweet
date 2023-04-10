@@ -6,7 +6,10 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
-  const [active, setActive] = useState(NavLinks.find(navLink => navLink.to === location.pathname)?.title || NavLinks[0].title);
+  const [active, setActive] = useState(
+    NavLinks.find((navLink) => navLink.to === location.pathname)?.title ||
+      NavLinks[0].title
+  );
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const ref = useRef(null);
@@ -51,19 +54,23 @@ const Navbar = () => {
     <nav
       className={`${
         scrolled ? "bg-darkBlue border-b border-b-gray" : "bg-darkBlue"
-      } w-full mx-auto fixed top-0 z-20`}
+      } w-full mx-auto fixed top-0 z-20  `}
     >
-      <div
-        className={`bg-darkBlue ${styles.flexBetween} ${styles.paddingX} ${styles.boxWidth}`}
-      >
-        <Link to={"/"} className="logo " onClick={() => setActive(NavLinks[0].title)}>
+      <div className={`bg-darkBlue py-7 md:p-0 ${styles.flexBetween} ${styles.paddingX} ${styles.boxWidth}`}>
+       <div className="nav-logo">
+       <Link
+          to={"/"}
+          className="logo "
+          onClick={() => setActive(NavLinks[0].title)}
+        >
           <img
             src={logo}
-            alt="talent-assurance"
+            alt="finsweet"
             className="w-[104px] object-contain md:w-[120px] lg:w-[122px] cursor-pointer "
           />
         </Link>
-        <div className="navbar-links-desk md:flex flex-row hidden justify-end items-center">
+       </div>
+        <div className="navbar-links-desk md:flex md:flex-row hidden md:justify-end md:items-center">
           <ul className="flex">
             {NavLinks.map((nav, index) => (
               <li
@@ -78,7 +85,10 @@ const Navbar = () => {
                                     ? "mr-0"
                                     : "mr-[40px] sm:mr-[40px] text-[15px] hover:font-bold hover:text-white lg:text-[17px] lg:leading-[24px]  md:mr-[30px] lg:mr-[50px] "
                                 }`}
-                onClick={() => {setActive(nav.title); setToggle(false);}}
+                onClick={() => {
+                  setActive(nav.title);
+                  setToggle(false);
+                }}
               >
                 <NavLink to={`${nav.to}`} className="">
                   {nav.title}
@@ -94,37 +104,60 @@ const Navbar = () => {
             <img src={arrowRight} alt="" />
           </a>
         </div>
-        <div
-          className={` ${styles.flexEnd} py-8 navbar-links-mobile md:hidden flex-1 z-[2]`}
-          ref={ref}
-        >
-          <div className="" onClick={() => setToggle(!toggle)}>
-            {toggle ? <img src={close} alt="" /> : <img src={menu} alt="" />}
-          </div>
-          <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 bg-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl navbar-links `}
-          >
-            <ul className="flex justify-end items-start flex-1 flex-col gap-7">
-              {NavLinks.map((nav, index) => (
-                <li
-                  key={nav.id}
-                  className={`cursor-pointer font-normal font-poppins text-[16px] ${
-                    active === nav.title ? "text-white" : "text-white"
-                  }
-                        ${index === NavLinks.length - 1 ? "mr-0" : "mr-10"} `}
-                        onClick={() => {setActive(nav.title); setToggle(false);}}
-                >
-                   <NavLink to={`${nav.to}`} className="">
-                  {nav.title}
-                </NavLink>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="md:hidden " >
+            {toggle ? <img src={menu} alt="" onClick={() => setToggle(true)}/> : <img src={menu} alt="" onClick={() => setToggle(true)}/>}
         </div>
       </div>
+     {
+      toggle && (
+        <div
+        className={`fixed navbar-bg top-0 min-h-screen  z-10  w-full   md:hidden  z-10`}
+        style={
+          {
+            left: toggle ? "0px" : "-300px",
+          }
+        }
+        
+        >
+      <div className="w-[250px]  navbar-mobile min-h-screen fixed top-0 z-20 "  ref={ref}>
+      <div className="flex items-end  py-[10px] flex-col  justify-end ">
+          <div className="rounded-full cursor-pointer w-auto hover:bg-[#8080803c] mr-5 p-3 mt-5 me" title="Close" onClick={() => setToggle(false)}>
+          <img src={close} alt="" />
+          </div>
+          <ul className="flex pe-20 mt-10 flex-col gap-10">
+            {NavLinks.map((nav, index) => (
+              <li
+                key={nav.id}
+                className={`cursor-pointer font-normal font-poppins text-[16px] ${
+                  active === nav.title 
+                  ? "text-white pl-[20px] border-l-[3px] pt-[] border-l-orange pointer-events-none "
+                  : "text-gray pl-[20px]  hover:text-white"
+                }
+                      ${index === NavLinks.length - 1 ? "mr-0" : "mr-10"} `}
+                onClick={() => {
+                  setActive(nav.title);
+                  setToggle(false);
+                }}
+              >
+                <NavLink to={`${nav.to}`} className="">
+                  {nav.title}
+                </NavLink>
+              </li>
+            ))}
+            <a
+          href="#clone"
+          className={`${styles.flexCenter} gap-3 text-lightOrange cursor-pointer`}
+        >
+          Clone project
+          <img src={arrowRight} alt="" />
+        </a>
+          </ul>
+          
+        </div>
+      </div>
+      </div>
+      )
+     }
     </nav>
   );
 };

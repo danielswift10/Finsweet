@@ -24,7 +24,8 @@ module.exports = {
         neutral: "#ffffff0f",
         veryDim: "#2325362b",
         lightPurple: "#F9F9FF",
-        workBg: "#FAFAFC"
+        workBg: "#FAFAFC",
+        jobDesc: "#FFE0C7",
 
 
       },

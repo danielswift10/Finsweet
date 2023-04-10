@@ -18,7 +18,7 @@ const Positions = () => {
         <div className="bg-lightCyan flex flex-wrap items-center py-20  px-6 gap-7 justify-center">
           {position.map((item, index) => (
             <div className="bg-white w-[354px] h-[243px] flex flex-col items-center justify-center ">
-             <div className="w-[250px] flex flex-col justify-betweeen gap-10">
+             <div className="w-[250px] flex flex-col justify-betweeen px-4 xs:px-0 gap-10">
              <div>
              <h6 className={`${styles.heading6}`}>{item.role}</h6>
               <p className={`${styles.paragraph} text-veryDimBlack`}>{item.mode}</p>
