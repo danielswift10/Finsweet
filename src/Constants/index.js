@@ -3,6 +3,7 @@ import {
   aboutImage2,
   aboutImage3,
   aboutShape,
+  andrew,
   aws,
   blog1,
   blog2,
@@ -700,6 +701,16 @@ const culture = [
     content: "Through True Rich Attended does no end it his mother since real had halfdoes no end it"
   },
 ]
+
+const trendingPost = [
+  {
+    id: 1,
+    title: "Great design expectations prejudice in digital products in Next Year",
+    avatar: andrew,
+    name: "Andrew Jonson"
+  }
+]
+
 
 export {
   NavLinks,

@@ -95,8 +95,17 @@ import gym from "./icons/gym.png"
 import closeModal from "./icons/close-modal.png"
 import closeModal2 from "./icons/close-modal.svg"
 
+import andrew from "./icons/andrew.png"
+import matthew from "./icons/matthew.png"
+import hussen from "./icons/hussen.png"
+
+import trendingPost from "./images/trending-post.png"
 
 export {
+    trendingPost,
+    andrew,
+    matthew,
+    hussen,
     closeModal,
     closeModal2,
     preloaderImage,
