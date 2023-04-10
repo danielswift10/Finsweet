@@ -1,6 +1,7 @@
 import privacyShape from "./icons/privacy-shape.png"
 
 import menu from "./icons/menu.svg"
+import preloaderImage from "./icons/logo.png"
 import close from "./icons/close.svg"
 import logo from "./icons/logo.svg"
 import arrowRight from "./icons/arrow-right.svg"
@@ -94,6 +95,7 @@ import gym from "./icons/gym.png"
 
 
 export {
+    preloaderImage,
     privacyShape,
     covid,
     timee,
