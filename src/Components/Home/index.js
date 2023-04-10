@@ -4,7 +4,7 @@ import Expertise from "./Expertise/Expertise";
 import Services from "./Services/Services";
 import Process from "./Process/Process";
 import Review from "./Review/Review";
-import Blog from "./Blog/Blog";
+import BlogSection from "./BlogSection/BlogSection";
 
 export {
     Hero,
@@ -13,5 +13,5 @@ export {
     Services,
     Process,
     Review,
-    Blog,
+    BlogSection,
 }

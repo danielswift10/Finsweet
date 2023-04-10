@@ -2,7 +2,7 @@ import { arrowRightDark } from "../../../Assets";
 import { Blogr } from "../../../Constants";
 import styles, { layout } from "../../../styles";
 
-const Blog = () => {
+const BlogSection = () => {
   return (
     <section className="py-20 bg-lightCyan">
       <div
@@ -34,4 +34,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogSection;

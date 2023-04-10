@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import {
   About,
-  Blog,
+  BlogSection,
   Expertise,
   Hero,
   Process,
@@ -22,7 +22,7 @@ const Home = (props) => {
       <Services />
       <Process />
       <Review />
-      <Blog/>
+      <BlogSection/>
     </div>
   );
 };

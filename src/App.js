@@ -1,20 +1,21 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Footer, Navbar } from "./Layouts";
-import { PrivacyPolicy } from "./Pages";
+import { Blog, PrivacyPolicy } from "./Pages";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 const Home = lazy(() => import("../src/Pages/Home/Home"));
 const Service = lazy(() => import("../src/Pages/Service/Service"));
 const Company = lazy(() => import("../src/Pages/Company/Company"));
 const Career = lazy(() => import("../src/Pages/Career/Career"));
+// const Blog = lazy(() => import("../src/Pages/Blog/Blog"));
 const JobApplication = lazy(() =>
   import("./Components/Career/JobApplication/JobApplication")
 );
 
 const App = () => {
   function handleContextMenu(e) {
-    e.preventDefault(); 
+    e.preventDefault();
   }
   return (
     <div className="App" onContextMenu={handleContextMenu}>
@@ -34,6 +35,10 @@ const App = () => {
             <Route
               path="/career"
               element={<Career title="Finsweet | Career" />}
+            />
+            <Route
+              path="/blog"
+              element={<Blog title="Finsweet | Blog" />}
             />
             <Route
               path="/career/:id"

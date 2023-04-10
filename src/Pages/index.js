@@ -3,6 +3,7 @@ import Service from "./Service/Service"
 import Company from "./Company/Company";
 import Career from "./Career/Career";
 import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
+import Blog from "./Blog/Blog"
 
 export {
     Home,
@@ -10,5 +11,6 @@ export {
     Company,
     Career,
     PrivacyPolicy,
+    Blog,
     
 }
