@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import {
   aboutImage1,
   aboutImage2,
@@ -68,13 +69,13 @@ const About = () => {
               </div>
             ))}
           </div>
-          <a
-            href="#about"
-            className={`read-more ${styles.flexCenter} gap-5 text-primary ${styles.textLink} `}
+          <NavLink to={"/company"}
+            
+            className={`read-more ${styles.flexCenter} gap-5 text-primary ${styles.textNavLink} `}
           >
             Read about us
             <img src={arrowRightDark} alt="" />
-          </a>
+          </NavLink>
         </div>
       </div>
     </section>
