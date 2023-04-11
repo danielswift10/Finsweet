@@ -4,7 +4,7 @@ const Article2 = ({ image, title, avatar, name, date }) => {
     return ( 
         <div className="flex flex-col bg-lightPurple lg:flex-row items-center  w-[310px]  lg:w-[524px] lg:gap-3 gap-8">
         <div className="image w-full overflow-hidden cursor-pointer">
-            <img src={image} alt="" className=" w-full h-full object-cover hover:scale-[1.03]" />
+            <img src={image} alt="" className=" w-full h-full object-cover transition duration-150 ease-out hover:ease-in hover:scale-[1.03]" />
         </div>
         <div className="content px-4 pb-10 lg:pb-0  ">
         <h4 className={`${styles.heading4} xs:text-[20px]  md:text-[22px] mb-5  xl:w-[264px]`}>{title}</h4>

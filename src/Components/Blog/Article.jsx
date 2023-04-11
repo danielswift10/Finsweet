@@ -4,7 +4,7 @@ const Article = ({ image, title, content, avatar, name, date }) => {
   return (
     <div className="flex flex-col items-center w-[310px]  lg:w-[405px] lg:gap-0 gap-5">
       <div className="image w-full overflow-hidden cursor-pointer  ">
-        <img src={image} alt="" className=" w-full h-full object-cover  hover:scale-[1.03]" />
+        <img src={image} alt="" className=" w-full h-full object-cover transition duration-150 ease-out hover:ease-in  hover:scale-[1.03]" />
       </div>
       <div className="content bg-white px-4 pb-10 lg:p-8  ">
         <h4
