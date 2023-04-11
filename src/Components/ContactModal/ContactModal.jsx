@@ -62,8 +62,8 @@ const Modal = (props) => {
             <img
               src={closeModal}
               alt=""
-              onClick={onClose}
-              className="cursor-pointer w-[78px] ss:w-[40px] md:w-[48px]"
+              onClick={onClose} 
+              className="cursor-pointer w-[78px] hover:scale-[1.03] ss:w-[40px] md:w-[48px]"
             />
           </button>
         </div>

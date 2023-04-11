@@ -20,6 +20,7 @@ import {
   facebook,
   gym,
   home,
+  hussen,
   infoTech,
   instagram,
   instagramLight,
@@ -37,8 +38,19 @@ import {
   linkedln,
   linkedlnLight,
   maintenance,
+  matthew,
+  post1,
+  post2,
+  post3,
+  post4,
+  post5,
+  post6,
   processShape,
   quality,
+  recent1,
+  recent2,
+  recent3,
+  recent4,
   retreats,
   statShapes,
   stipend,
@@ -702,17 +714,127 @@ const culture = [
   },
 ]
 
-const trendingPost = [
+const trendingBlog = [
   {
     id: 1,
     title: "Great design expectations prejudice in digital products in Next Year",
     avatar: andrew,
-    name: "Andrew Jonson"
-  }
+    name: "Andrew Jonson",
+    date: "Jan 19, 2021",
+  },
+  {
+    id: 2,
+    title: "Great design expectations prejudice in digital products in Next Year",
+    avatar: matthew,
+    name: "Mathew Jasele",
+    date: "Jan 19, 2021",
+  },
+  {
+    id: 3,
+    title: "Great design expectations prejudice in digital products in Next Year",
+    avatar: hussen,
+    name: "Hussen Abakas",
+    date: "Jan 19, 2021",
+  },
 ]
 
 
+const recentBlogPost = [
+  {
+    id: 1,
+    title: "Today’s best design trends for digital products",
+    avatar: andrew,
+    image: recent1,
+    name: "Andrew Jonson",
+    date: "Jan 19, 2021",
+  },
+  {
+    id: 2,
+    title: "Today’s best design trends for digital products",
+    avatar: matthew,
+    image: recent2,
+    name: "Mathew Jasele",
+    date: "Jan 19, 2021",
+  },
+  {
+    id: 3,
+    title: "Today’s best design trends for digital products",
+    avatar: hussen,
+    image: recent3,
+    name: "Hussen Abakas",
+    date: "Jan 19, 2021",
+  },
+  {
+    id: 4,
+    title: "Today’s best design trends for digital products",
+    avatar: andrew,
+    image: recent4,
+    name: "Andrew Jonson",
+    date: "Jan 19, 2021",
+  },
+]
+
+const AllPost = [
+  {
+    id: 1,
+    title: "We aim to attain the greatest satisfaction for our clients ",
+    content: "It is a long established fact that a reader will be distracted by the readable content of a page.",
+    avatar: andrew,
+    image: post1,
+    name: "Andrew Jonson",
+    date: "Jan 19, 2021",
+  },
+  {
+    id: 2,
+    title: "We aim to attain the greatest satisfaction for our clients ",
+    content: "It is a long established fact that a reader will be distracted by the readable content of a page.",
+    avatar: matthew,
+    image: post2,
+    name: "Mathew Jasele",
+    date: "Jan 19, 2021",
+  },
+  {
+    id: 3,
+    title: "We aim to attain the greatest satisfaction for our clients ",
+    content: "It is a long established fact that a reader will be distracted by the readable content of a page.",
+    avatar: hussen,
+    image: post3,
+    name: "Hussen Abakas",
+    date: "Jan 19, 2021",
+  },
+  {
+    id: 4,
+    title: "We aim to attain the greatest satisfaction for our clients ",
+    content: "It is a long established fact that a reader will be distracted by the readable content of a page.",
+    avatar: andrew,
+    image: post4,
+    name: "Andrew Jonson",
+    date: "Jan 19, 2021",
+  },
+  {
+    id: 5,
+    title: "We aim to attain the greatest satisfaction for our clients ",
+    content: "It is a long established fact that a reader will be distracted by the readable content of a page.",
+    avatar: andrew,
+    image: post5,
+    name: "Andrew Jonson",
+    date: "Jan 19, 2021",
+  },
+  {
+    id: 6,
+    title: "We aim to attain the greatest satisfaction for our clients ",
+    content: "It is a long established fact that a reader will be distracted by the readable content of a page.",
+    avatar: andrew,
+    image: post6,
+    name: "Andrew Jonson",
+    date: "Jan 19, 2021",
+  },
+]
+
 export {
+  AllPost,
+  recentBlogPost,
+  trendingBlog,
   NavLinks,
   Ipsum,
   culture,

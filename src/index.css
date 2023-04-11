@@ -52,8 +52,8 @@
 }
 
 .navbar-bg{
-  background-color: transparent;
-    backdrop-filter: saturate(100%) blur(5px);
+  background-color: #00000080;
+    backdrop-filter: saturate(100%) blur(2px);
 }
 
 .modal{

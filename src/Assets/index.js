@@ -100,8 +100,32 @@ import matthew from "./icons/matthew.png"
 import hussen from "./icons/hussen.png"
 
 import trendingPost from "./images/trending-post.png"
+import trendingShapes from "./icons/trending-shapes.png"
+
+import recent1 from "./images/recent-1.png"
+import recent2 from "./images/recent-2.png"
+import recent3 from "./images/recent-3.png"
+import recent4 from "./images/recent-4.png"
+
+import post1 from "./images/post-1.png"
+import post2 from "./images/post-2.png"
+import post3 from "./images/post-3.png"
+import post4 from "./images/post-4.png"
+import post5 from "./images/post-5.png"
+import post6 from "./images/post-6.png"
 
 export {
+    post1,
+    post2,
+    post3,
+    post4,
+    post5,
+    post6,
+    recent1,
+    recent2,
+    recent3,
+    recent4,
+    trendingShapes,
     trendingPost,
     andrew,
     matthew,

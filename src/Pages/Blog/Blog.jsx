@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import {TrendingBlog} from "../../Components/Blog/index";
+import {AllBlog, RecentBlog, TrendingBlog} from "../../Components/Blog";
 
 
 const Blog = (props) => {
@@ -10,6 +10,8 @@ const Blog = (props) => {
     return (
       <div className="">
     <TrendingBlog/>
+    <RecentBlog/>
+    <AllBlog/>
       </div>
     );
   };

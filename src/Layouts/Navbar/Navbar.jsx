@@ -132,7 +132,7 @@ const Navbar = () => {
         }
         
         >
-      <div className="w-[250px]  navbar-mobile min-h-screen fixed top-0 z-20 "  ref={ref}>
+      <div className="w-[250px]   navbar-mobile min-h-screen fixed top-0 z-20 "  ref={ref}>
       <div className="flex items-end  py-[10px] flex-col  justify-end ">
           <div className="rounded-full cursor-pointer w-auto hover:bg-[#8080803c] mr-5 p-3 mt-5 me" title="Close" onClick={() => setToggle(false)}>
           <img src={close} alt="" />

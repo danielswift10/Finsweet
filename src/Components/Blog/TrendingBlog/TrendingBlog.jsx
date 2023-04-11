@@ -1,24 +1,25 @@
 import { NavLink } from "react-router-dom";
-import { andrew, arrowRightDark, shapesLeft, shapesRight, trendingPost } from "../../../Assets";
+import { andrew, arrowRightDark, shapesLeft, shapesRight, trendingPost, trendingShapes } from "../../../Assets";
 import styles from "../../../styles";
+import { trendingBlog } from "../../../Constants";
 
 const TrendingBlog = () => {
   return (
-    <section className="py-20 mt-[60px]">
+    <section className="pt-20 mt-[60px]">
       <div className={` ${styles.boxWidth} ${styles.padding} `}>
         <div
-          className={`flex flex-row mb-[50px] ${styles.flexStartB} md:items-start gap-3 sm:gap-0 md:gap-10`}
+          className={`flex flex-col md:flex-row  mb-[50px] ${styles.flexStartB} md:items-start gap-14  md:gap-10 lg:gap-28`}
         >
-          <div className="relative">
-            <p className={`${styles.caption} mb-3`}>TRENDING</p>
-            <div className="absolute top-[-35px] left-0   xl:left-0   w-[16px] h-[16px] bg-lightOrange " />
+          <div className="relative flex-1 pt-10">
+            <p className={`${styles.caption} mb-5`}>TRENDING</p>
+            <div className="absolute top-0 left-0   xl:left-0   w-[16px] h-[16px] bg-lightOrange " />
             <h2
-              className={`${styles.heading2} text-[30px] sm:text-[35px] mb-5 lg:text-[40px]  xl:w-[640px] smd:w-[700px]  text-black`}
+              className={`${styles.heading2} text-[30px] sm:text-[37px] mb-5 lg:text-[40px]  xl:w-[640px] sm:w-[610px] md:w-full ss:w-[500px]  text-black`}
             >
               Breaking the code How did we build our Figma plugin
             </h2>
             <p
-              className={`${styles.paragraph} xl:w-[624px] mb-5 md:w-[690px] text-veryDimBlack2`}
+              className={`${styles.paragraph} xl:w-[624px] mb-5 ss:w-[520px] sm:w-[622px] md:w-full text-veryDimBlack2`}
             >
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
@@ -50,23 +51,34 @@ const TrendingBlog = () => {
                     </p>
                 </div>
              </div>
-             <div>
-                    <img src={trendingPost} alt="" />
+             <div className="">
+                    <img src={trendingPost} alt=""  className=""/>
+                    {/* <img src={trendingShapes} alt="" className="absolute top-0 right-[17px] " /> */}
                 </div>
           </div>
-          <div className="bg-jobDesc lg:w-[515px] h-[324px] flex relative flex-col items-center justify-center  ">
+          <div className="bg-jobDesc flex-1 lg:w-[515px] h-[738px] xl:w-[515px] flex relative flex-col items-center justify-center  ">
           <img src={shapesRight} alt=""  className="absolute  top-0 right-0 w-[38px] md:w-[48px]  "/>
-           <div className="px-7 xs:px-16">
-           <h4 className={`${styles.heading4} text-black mb-7 `}>Job Description</h4>
-            <p className={`${styles.paragraph}`}>
-            Remote, India , 4 to 5 Years Of Experience
-            <br />
-            <br />
-            Department: Product Engineering
-            <br />
-            <br />
-            Full Time 5 Position Available.
-            </p>
+           <div className="px-12 py-20 xl:py-0 xs:px-16 flex flex-col gap-10">
+           {
+            trendingBlog.map((trend, index) => (
+                <div>
+                    <h4 
+                    className={`${styles.heading4} xs:text-[20px] xs:w-[318px] md:text-[22px] mb-5 md:w-[366px]`}
+                    >{trend.title}</h4>
+                    <div className="flex  items-center gap-4">
+                        <div className="avatar">
+                            <img src={trend.avatar} alt="" />
+                        </div>
+                        <div className="name-date">
+                            <p className={`${styles.paragraph}`}>{trend.name}</p>
+                            <p className={`${styles.paragraphSmall}`}>{trend.date}</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            ))
+           }
            </div>
 
         </div>
