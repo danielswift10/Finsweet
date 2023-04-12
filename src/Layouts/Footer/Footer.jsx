@@ -121,13 +121,13 @@ const Footer = () => {
             </div>
             <div className="contact flex items-center gap-3  justify-end mt-[80px] ">
               <img src={contactShape} alt="" />
-              <a
-                href="#about" onClick={()=>{setShow(true)}}
+              <button
+                type="button" onClick={()=>{setShow(true)}}
                 className={`read-more flex items-center gap-3 ${styles.textLink} text-black`}
               >
                 Contact Us
                 <img src={arrowRightDark} alt="" />
-              </a>
+              </button>
             </div>
           </div>
         </div>

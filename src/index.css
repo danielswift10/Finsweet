@@ -73,3 +73,17 @@
 .modal.show .modal-content{
    transform: translateY(0);
 }
+
+.han{
+  animation: shake infinite 1s ease;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(20deg);
+  }
+  
+  50% {
+    transform: rotate(-20deg);
+  }
+} 

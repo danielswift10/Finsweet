@@ -3,6 +3,9 @@ import { Button } from "../../../Utils";
 import styles, { layout } from "../../../styles";
 
 const JobApplication = ({ position }) => {
+  if (!position) {
+    return null;
+  }
   return (
     <section className={` ${styles.boxWidth} my-20 `}>
       <div className={`${layout.section1} ${styles.flexCenter} gap-14 `}>
@@ -37,6 +40,10 @@ const JobApplication = ({ position }) => {
            </div>
 
         </div>
+      </div>
+
+      <div>
+        
       </div>
     </section>
   );

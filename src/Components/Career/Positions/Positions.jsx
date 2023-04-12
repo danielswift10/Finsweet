@@ -26,7 +26,7 @@ const Positions = () => {
              </div>
              <div>
              <NavLink
-                // to={item.to}
+                to={`/career/${item.to}`}
                 className={`read-more gap-3 text-primary flex items-center  font-poppins font-semibold text-[16px] leading-[24px] `}
                 onClick={() => setSelectedPosition(item)}
               >
@@ -38,9 +38,9 @@ const Positions = () => {
             </div>
           ))}
         </div>
-        {selectedPosition && (
+        {/* {selectedPosition && (
         <JobApplication position={selectedPosition} />
-      )}
+      )} */}
       </div>
     </section>
   );

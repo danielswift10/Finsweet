@@ -47,10 +47,11 @@ const Modal = (props) => {
         <div className="modal-header w-full flex  mb-10  justify-between items-start mx-auto ">
           <div className="modal-header-title  pt-10">
             <h2
-              className={`font-poppins font-bold w-full xl:text-[38px] md:text-[34px]  xl:leading-[58px] leading-[42px] mb-2  md:mb-3 text-[28px] text-black `}
+              className={`border font-poppins font-bold w-full xl:text-[38px] md:text-[34px]  xl:leading-[58px] leading-[42px] mb-2  md:mb-3 text-[28px] text-black `}
             >
-              Have a Question ? <br className="hidden ss:block" /> Let’s Get in
-              Touch with us 👋
+                Have a Question ? <br className="hidden ss:block" /> Let’s Get in
+              Touch with us
+               <span className="han  w-fit " >👋</span>
             </h2>
             <p
               className={`font-poppins font-normal xl:text-[16px]  xl:leading-[24px] text-secondary text-[14px]`}

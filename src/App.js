@@ -41,7 +41,7 @@ const App = () => {
               element={<Blog title="Finsweet | Blog" />}
             />
             <Route
-              path="/career/:id"
+              path="/career/:position"
               element={<JobApplication title="Finsweet | Career" />}
             />
             <Route
