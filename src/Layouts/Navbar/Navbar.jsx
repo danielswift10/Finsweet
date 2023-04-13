@@ -124,7 +124,7 @@ const Navbar = () => {
      {
       toggle && (
         <div
-        className={`fixed navbar-bg z-20 top-0 min-h-screen  w-full   md:hidden  z-10`}
+        className={`fixed navbar-bg bg-[#00000080] z-20 top-0 min-h-screen  w-full   md:hidden  z-10`}
         style={
           {
             left: toggle ? "0px" : "-300px",

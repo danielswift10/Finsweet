@@ -52,7 +52,6 @@
 }
 
 .navbar-bg{
-  background-color: #00000080;
     backdrop-filter: saturate(100%) blur(2px);
 }
 
@@ -76,7 +75,6 @@
 
 .han{
   animation: shake infinite 1s ease;
-  color: #ffffff99;
 }
 
 @keyframes shake {
