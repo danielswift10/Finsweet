@@ -37,7 +37,6 @@ module.exports = {
         normal: 400,
         semibold: 500,  
         bold: 600,
-        // extraBold: 900,
       },
       dropShadow: {
         "serviceCard": "0px 50px 60px #ffa15559",
