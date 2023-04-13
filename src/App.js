@@ -1,8 +1,9 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Footer, Navbar } from "./Layouts";
-import { Blog, PrivacyPolicy } from "./Pages";
+import { Blog, Contact, PrivacyPolicy } from "./Pages";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
+import { TrendingBlog1 } from "./Components/Blog";
 
 const Home = lazy(() => import("../src/Pages/Home/Home"));
 const Service = lazy(() => import("../src/Pages/Service/Service"));
@@ -36,9 +37,10 @@ const App = () => {
               path="/career"
               element={<Career title="Finsweet | Career" />}
             />
+            <Route path="/blog" element={<Blog title="Finsweet | Blog" />} />
             <Route
-              path="/blog"
-              element={<Blog title="Finsweet | Blog" />}
+              path="/blog/Breaking-the-code-How-did-we-build-our-Figma-plugin"
+              element={<TrendingBlog1 title="Finsweet | Blog" />}
             />
             <Route
               path="/career/:position"
@@ -47,6 +49,10 @@ const App = () => {
             <Route
               path="/privacy-policy"
               element={<PrivacyPolicy title="Finsweet | Privacy Policy" />}
+            />
+            <Route
+              path="/contact"
+              element={<Contact title="Finsweet | Contact Us" />}
             />
           </Routes>
         </Suspense>

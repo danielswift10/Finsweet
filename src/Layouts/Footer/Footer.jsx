@@ -67,8 +67,9 @@ const Footer = () => {
           >
             Let's make something special
           </h2>
-          <h4 className={`${styles.heading4} text-[20px] ss:text-[25px] mb-5 `}>
-            Let's talk! 🤙{" "}
+          <h4 className={`${styles.heading4} flex text-[20px] ss:text-[25px] mb-5 `}>
+            <span className="block w-fit">Let's talk! {" "}</span>
+            <span className="han w-fit block">🤙</span>
           </h4>
           <div>
             <p className={`contact ${styles.paragraphLarge}`}>020 7993 2905</p>
@@ -87,9 +88,11 @@ const Footer = () => {
             <div className="flex flex-col gap-7 md:flex-row md:gap-[70px]">
               <ul>
                 {footerLinks.map((item, index) => (
-                  <h6 className={` text-[] mb-6 lg:mb-3 ${styles.heading6}`}>
+                  <NavLink to={item.to}>
+                    <h6 className={` text-[] mb-6 lg:mb-3 ${styles.heading6}`}>
                     {item.text}
                   </h6>
+                  </NavLink>
                 ))}
               </ul>
               <ul>
@@ -139,7 +142,7 @@ const Footer = () => {
         >
           <div className="logo-copyright flex gap-7 items-center">
             <img src={logoDark} alt="" className="" />
-            <p className="font-poppins text-[16px] font-semibold ">
+            <p className="font-poppins text-[16px] font-semibold pt-[3px]">
               ©2021 Finsweet
             </p>
           </div>

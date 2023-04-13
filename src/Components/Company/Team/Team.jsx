@@ -11,7 +11,7 @@ const Team = () => {
     setHoveredIndex(index);
     setHideTimeout(setTimeout(() => {
       setHoveredIndex(null);
-    }, 500));
+    }, 100000));
   };
   
 
@@ -44,11 +44,11 @@ const Team = () => {
                     <div className="relative" >
                         <img  src={team.image} alt="team" className="" 
                          onMouseEnter={() => handleMouseEnter(index)}
-                         onMouseLeave={handleMouseLeave} 
+                        //  onMouseLeave={handleMouseLeave} 
                          />
                         {
                           hoveredIndex === index && (
-                            <div className="team-info px-[60px] bg-teamBg absolute flex flex-col justify-end pb-14 z-10 w-[320px] h-[320px] top-0">
+                            <div className="team-info cursor-pointer  px-[60px] bg-teamBg absolute flex flex-col justify-end pb-14 z-10 w-full x:w-[320px] h-full xs:h-[320px] top-0">
                               <h4 className={`${styles.heading4} mb-3 text-white`}>
                                 {team.name}
                               </h4>

@@ -109,13 +109,13 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <a
-            href="#clone"
+          <NavLink
+            to={'/'}
             className={`${styles.flexCenter} gap-3 text-lightOrange cursor-pointer`}
           >
             Clone project
             <img src={arrowRight} alt="" />
-          </a>
+          </NavLink>
         </div>
         <div className="md:hidden " >
             {toggle ? <img src={menu} alt="" onClick={() => setToggle(true)}/> : <img src={menu} alt="" onClick={() => setToggle(true)}/>}
@@ -124,7 +124,7 @@ const Navbar = () => {
      {
       toggle && (
         <div
-        className={`fixed navbar-bg top-0 min-h-screen  z-10  w-full   md:hidden  z-10`}
+        className={`fixed navbar-bg z-20 top-0 min-h-screen  w-full   md:hidden  z-10`}
         style={
           {
             left: toggle ? "0px" : "-300px",
@@ -132,7 +132,7 @@ const Navbar = () => {
         }
         
         >
-      <div className="w-[250px]   navbar-mobile min-h-screen fixed top-0 z-20 "  ref={ref}>
+      <div className="w-[250px] z-20  navbar-mobile min-h-screen fixed top-0 z-20 "  ref={ref}>
       <div className="flex items-end  py-[10px] flex-col  justify-end ">
           <div className="rounded-full cursor-pointer w-auto hover:bg-[#8080803c] mr-5 p-3 mt-5 me" title="Close" onClick={() => setToggle(false)}>
           <img src={close} alt="" />
@@ -141,7 +141,7 @@ const Navbar = () => {
             {NavLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`cursor-pointer font-normal font-poppins text-[16px] ${
+                className={`cursor-pointer font-normal font-poppins text-[16px] w-full ${
                   active === nav.title 
                   ? "text-white pl-[20px] border-l-[3px] pt-[] border-l-orange pointer-events-none "
                   : "text-gray pl-[20px]  hover:text-white"
@@ -157,13 +157,14 @@ const Navbar = () => {
                 </NavLink>
               </li>
             ))}
-            <a
-          href="#clone"
+            <NavLink
+          to={'/'}
+          onClick={()=> {setToggle(false)}}
           className={`${styles.flexCenter} gap-3 text-lightOrange cursor-pointer`}
         >
           Clone project
           <img src={arrowRight} alt="" />
-        </a>
+        </NavLink>
           </ul>
           
         </div>

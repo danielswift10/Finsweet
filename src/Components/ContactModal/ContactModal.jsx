@@ -45,13 +45,13 @@ const Modal = (props) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="modal-header w-full flex  mb-10  justify-between items-start mx-auto ">
-          <div className="modal-header-title  pt-10">
+          <div className="modal-header-title  pt-7">
             <h2
-              className={`border font-poppins font-bold w-full xl:text-[38px] md:text-[34px]  xl:leading-[58px] leading-[42px] mb-2  md:mb-3 text-[28px] text-black `}
+              className={`font-poppins font-bold flex items-end justify-end  w-full xl:text-[38px] md:text-[34px]  xl:leading-[58px] leading-[42px] mb-2  md:mb-3 text-[28px] text-black `}
             >
-                Have a Question ? <br className="hidden ss:block" /> Let’s Get in
-              Touch with us
-               <span className="han  w-fit " >👋</span>
+              <span className=" ">  Have a Question ? <br className="hidden ss:block" /> Let’s Get in
+              Touch with us</span>
+               <span className="han  w-fit block" >👋</span>
             </h2>
             <p
               className={`font-poppins font-normal xl:text-[16px]  xl:leading-[24px] text-secondary text-[14px]`}
@@ -80,7 +80,7 @@ const Modal = (props) => {
               <input
                 type="text"
                 className={`${styles.paragraph} outline-0 pb-1 md:w-[405px] border-b text-black font-semibold border-b-veryLightBlack2 `}
-                value="Daniel Ojeyomi"
+                placeholder="Enter your Name"
               />
             </div>
             <div className="email flex flex-col gap-2 mb-6 ">
@@ -90,7 +90,7 @@ const Modal = (props) => {
               <input
                 type="email"
                 className={`${styles.paragraph} outline-0 pb-1 md:w-[405px]  border-b text-black font-semibold border-b-veryLightBlack2`}
-                value="ojeyomi.daniel@gmail.com"
+                placeholder="abc@gmail.com"
               />
             </div>
             <div className="subject flex flex-col gap-2 mb-6">
@@ -100,7 +100,7 @@ const Modal = (props) => {
               <input
                 type="text"
                 className={`${styles.paragraph} outline-0 pb-1 md:w-[405px]  border-b text-black font-semibold border-b-veryLightBlack2`}
-                value="For web design work Enquire "
+                placeholder="Title of the mail"
               />
             </div>
             <div className="message flex flex-col gap-2 mb-12">
@@ -110,7 +110,7 @@ const Modal = (props) => {
               <input
                 type="text"
                 className={`${styles.paragraph} outline-0 pb-1 md:w-[405px]  border-b text-black font-semibold border-b-veryLightBlack2`}
-                value="Type your Message here"
+                placeholder="Type your Message here"
               />
             </div>
             <Button title={"Send Message"} />

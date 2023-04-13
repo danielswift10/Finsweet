@@ -24,7 +24,9 @@ const WhatWeDo = () => {
             <div className={`image flex-1  flex  ${
                 index % 2 !== 0 ? "" : "justify-end" 
             }`}>
-                <img src={service.image} alt="" className="w-fit"/>
+                <div className="overflow-hidden">
+                <img src={service.image} alt="" className={`w-fit ${styles.image}`}/>
+                </div>
             </div>
             </div>
           </div>

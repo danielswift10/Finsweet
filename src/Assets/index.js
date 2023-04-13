@@ -48,10 +48,10 @@ import newsLetterShape1 from "./icons/newsletter-shape.png"
 import footerShapes from "./icons/footer-shapes.png"
 import contactShape from "./icons/contact-shape.png"
 import logoDark from "./icons/logo-dark.svg"
-import facebook from "./icons/facebook.png"
-import twitter from "./icons/twitter.png"
-import instagram from "./icons/instagram.png"
-import linkedln from "./icons/linkedln.png"
+import facebook from "./icons/facebook.svg"
+import twitter from "./icons/twitter.svg"
+import instagram from "./icons/instagram.svg"
+import linkedln from "./icons/linkedln.svg"
 import expertiseShape from "./icons/expertise-shape.png"
 import heroShapeL from "./icons/hero-shape-left.png"
 import heroShapeR from "./icons/hero-shape-right.png"
@@ -81,9 +81,10 @@ import team6 from "./images/team-6.png"
 import team7 from "./images/team-7.png"
 import team8 from "./images/team-8.png"
 
-import twitterLight from "./icons/twitter-light.png"
-import linkedlnLight from "./icons/linkedln-light.png"
-import instagramLight from "./icons/instagram-light.png"
+import twitterLight from "./icons/twitter-light.svg"
+import linkedlnLight from "./icons/linkedln-light.svg"
+import instagramLight from "./icons/instagram-light.svg"
+import facebookLight from "./icons/facebook-light.svg"
 
 import covid from "./icons/covid.png"
 import timee from "./icons/time.png"
@@ -114,7 +115,15 @@ import post4 from "./images/post-4.png"
 import post5 from "./images/post-5.png"
 import post6 from "./images/post-6.png"
 
+import topShapes from "./icons/top-shapes.png"
+import bottomShapes from "./icons/bottom-shapes.png"
+
+import map from "./images/map.png"
+
 export {
+    topShapes,
+    map,
+    bottomShapes,
     post1,
     post2,
     post3,
@@ -140,6 +149,7 @@ export {
     retreats,
     stipend,
     gym,
+    facebookLight,
     twitterLight,
     linkedlnLight,
     instagramLight,

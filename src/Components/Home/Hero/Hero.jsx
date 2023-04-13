@@ -16,7 +16,9 @@ const Hero = () => {
                     <Button title={'Request Quote'}/>
                 </div>
                 <div className={`hero-image relative z-10 `}>
-                    <img src={heroImage} alt="" className="relative z-10" />
+                    <div className="relative overflow-hidden relative z-10">
+                    <img src={heroImage} alt="" className={`${styles.image}`} />
+                    </div>
                     <img src={heroShapeR} alt="" className="absolute top-0 h-[230px] xs:h-[350px] ss:right-[-20px] ss:top-0 right-[-13px] md:right-[-15px] md:h-[320px] md:top-0 " />
                     <img src={heroShapeL} alt="" className="absolute bottom-0 h-[80px] xs:h-[120px] left-[-12px] " />
                 </div>

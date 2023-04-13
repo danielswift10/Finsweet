@@ -29,7 +29,9 @@ const styles  = {
 
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
+    image: "transition duration-150 ease-out hover:ease-in  hover:scale-[1.03] object-cover cursor-pointer"
 }
+
  
 export const layout = {
     section: `flex md:flex-row flex-col ${styles.paddingY}`,

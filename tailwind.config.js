@@ -22,6 +22,7 @@ module.exports = {
         lightCyan: "#ECF8F9",
         chalk: "#FFE6D2",
         neutral: "#ffffff0f",
+        neutral60: "#ffffff99",
         veryDim: "#2325362b",
         lightPurple: "#F9F9FF",
         workBg: "#FAFAFC",

@@ -27,7 +27,7 @@ const TrendingBlog = () => {
             </p>
             <div className="mb-8">
              <NavLink
-                // to={item.to}
+                to={"/blog/Breaking-the-code-How-did-we-build-our-Figma-plugin"}
                 className={`read-more gap-3 text-primary flex items-center  font-poppins font-semibold text-[16px] leading-[24px] `}
               >
                 Read More
@@ -51,8 +51,8 @@ const TrendingBlog = () => {
                     </p>
                 </div>
              </div>
-             <div className="">
-                    <img src={trendingPost} alt=""  className=""/>
+             <div className="overflow-hidden">
+                    <img src={trendingPost} alt=""  className={`${styles.image}`}/>
                     {/* <img src={trendingShapes} alt="" className="absolute top-0 right-[17px] " /> */}
                 </div>
           </div>

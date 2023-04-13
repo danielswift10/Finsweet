@@ -21,6 +21,7 @@ import {
   discover,
   expertiseShape,
   facebook,
+  facebookLight,
   gym,
   home,
   hussen,
@@ -306,22 +307,27 @@ const aboutImages = [
 const footerLinks = [
   {
     id: 1,
+    to: "/",
     text: "Home",
   },
   {
     id: 2,
+    to: "/service",
     text: "Service",
   },
   {
     id: 3,
+    to: "/company",
     text: "Company",
   },
   {
     id: 4,
+    to: "/career",
     text: "Career",
   },
   {
     id: 5,
+    to: "/blog",
     text: "News",
   },
 ];
@@ -357,6 +363,7 @@ const footerLinks1 = [
 const footerLinks2 = [
   {
     id: 1,
+    to: "/company",
     title: "Resources",
     text: "About Us",
   },
@@ -932,7 +939,100 @@ const Testimonials = [
   }
 ]
 
+const ContactWrapper = [
+  {
+    id:1,
+    heading: "Location",
+    content: "DLF Cybercity, Bhubaneswar, India, &52050",
+    socials: [
+      {
+        socialImage: facebookLight,
+      },
+      {
+        socialImage: twitterLight,
+      },
+      {
+        socialImage: instagramLight,
+      },
+      {
+        socialImage: linkedlnLight,
+      },
+    ],
+  },
+  {
+    id:2,
+    heading: "Working Hour",
+    content: "Monday To Friday",
+    time: "9:00 AM to 8:00 PM ",
+    content2: "Our Support Team is available 24Hrs",
+    socials: [
+      {
+        socialImage: facebookLight,
+      },
+      {
+        socialImage: twitterLight,
+      },
+      {
+        socialImage: instagramLight,
+      },
+      {
+        socialImage: linkedlnLight,
+      },
+    ],
+  },
+  {
+    id:3,
+    heading: "Contact Us",
+    content: "020 7993 2905",
+    content2: "Hello@ether.com",
+    socials: [
+      {
+        socialImage: facebookLight,
+      },
+      {
+        socialImage: twitterLight,
+      },
+      {
+        socialImage: instagramLight,
+      },
+      {
+        socialImage: linkedlnLight,
+      },
+    ],
+  } 
+]
+
+const ContactSocials = [
+  {
+    id: 1,
+    link: "https://twitter.com/swift_fingers_",
+    title: "facebook",
+    image: facebookLight,
+  },
+  {
+    id: 2,
+    link: "https://twitter.com/swift_fingers_",
+    title: "twitter",
+    image: twitterLight,
+  },
+  {
+    id: 3,
+    link: "https://instagram.com/danie_swift_",
+    title: "instagram",
+    image: instagramLight,
+  },
+  {
+    id: 4,
+    link: "https://linkedln.com/daniel-ojeyomi",
+    title: "linkedln",
+    image: linkedlnLight,
+  },
+];
+
+
 export {
+  ContactSocials,
+  ContactWrapper,
   Testimonials,
   JobDetails,
   AllPost,

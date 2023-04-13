@@ -21,8 +21,8 @@ const Vision = () => {
             saw his giving Remain expense you position concluded.
           </p>
         </div>
-        <div className="image">
-            <img src={visionImage} alt="" />
+        <div className="image overflow-hidden">
+            <img src={visionImage} alt=""  className={`${styles.image}`} />
         </div>
       </div>
     </section>

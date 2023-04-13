@@ -40,7 +40,7 @@ const About = () => {
         <div className={`${styles.flexWrap} gap-3 `}>
           {aboutImages.map((about, index) => (
             <div className="relative overflow-hidden cursor-pointer">
-              <img src={about.image} alt="" className="transition duration-150 ease-out hover:ease-in  hover:scale-[1.03]"/>
+              <img src={about.image} alt="" className={`${styles.image}`}/>
               <img src={about.image2} alt="" className="  h-[352px] xs:h-[445px] w-[12px] absolute bottom-0 right-[-5px]  " />
             </div>
           ))}
@@ -49,7 +49,7 @@ const About = () => {
           className={`statistics ${styles.flexBetween} ${layout.section1} ${styles.paddingY} mt-3 gap-10`}
         >
           <div
-            className={`statistics-content flex flex-col sm:gap-10 md:gap-[60px] xs:flex-row gap-5`}
+            className={`statistics-content flex flex-wrap sm:gap-10 md:gap-[60px] gap-5`}
           >
             {Statistics.map((stat, index) => (
               <div key={stat.id}>
