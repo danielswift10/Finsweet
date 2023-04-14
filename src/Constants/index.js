@@ -16,7 +16,6 @@ import {
   designing,
   dev,
   develop,
-  development,
   devv,
   discover,
   expertiseShape,

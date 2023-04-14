@@ -17,9 +17,10 @@ const Team = () => {
 
   const handleMouseLeave = () => {
     if (hideTimeout) {
-      clearTimeout(hideTimeout);
+      setHideTimeout(setTimeout(() => {
+        setHoveredIndex(null);
+      }, 10000));
     }
-    setHoveredIndex(null);
   };
   
   return (
@@ -44,7 +45,7 @@ const Team = () => {
                     <div className="relative" >
                         <img  src={team.image} alt="team" className="" 
                          onMouseEnter={() => handleMouseEnter(index)}
-                        //  onMouseLeave={handleMouseLeave} 
+                         onMouseLeave={handleMouseLeave} 
                          />
                         {
                           hoveredIndex === index && (

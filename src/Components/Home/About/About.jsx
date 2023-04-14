@@ -40,8 +40,8 @@ const About = () => {
         <div className={`${styles.flexWrap} gap-3 `}>
           {aboutImages.map((about, index) => (
             <div className="relative overflow-hidden cursor-pointer">
-              <img src={about.image} alt="" className={`${styles.image}`}/>
-              <img src={about.image2} alt="" className="  h-[352px] xs:h-[445px] w-[12px] absolute bottom-0 right-[-5px]  " />
+              <img src={about.image} alt="" className={`${styles.image} w-auto h-auto`}/>
+              <img src={about.image2} alt="" className="  h-[352px] xs:h-[445px] w-[12px]  absolute bottom-0 right-[-5px]  " />
             </div>
           ))}
         </div>

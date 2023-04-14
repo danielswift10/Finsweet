@@ -17,7 +17,7 @@ const Hero = () => {
                 </div>
                 <div className={`hero-image relative z-10 `}>
                     <div className="relative overflow-hidden relative z-10">
-                    <img src={heroImage} alt="" className={`${styles.image}`} />
+                    <img src={heroImage} alt="" className={`${styles.image} w-auto h-auto`} />
                     </div>
                     <img src={heroShapeR} alt="" className="absolute top-0 h-[230px] xs:h-[350px] ss:right-[-20px] ss:top-0 right-[-13px] md:right-[-15px] md:h-[320px] md:top-0 " />
                     <img src={heroShapeL} alt="" className="absolute bottom-0 h-[80px] xs:h-[120px] left-[-12px] " />
@@ -31,7 +31,7 @@ const Hero = () => {
                <div className={`clients ${styles.flexWrap}`}>
                 {
                     Ipsum.map((item, index) => (
-                        <img src={item.image} alt="ipsum"/>
+                        <img src={item.image} alt="ipsum" className="w-auto h-auto"/>
                     ))
                 }
                </div>

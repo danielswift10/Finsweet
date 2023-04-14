@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   arrowRightDark,
   contactShape,
@@ -138,7 +138,7 @@ const Footer = () => {
 
       <div className={`  bg-chalk`}>
         <div
-          className={` ${styles.boxWidth} ${styles.padding2} py-6 md:h-[80px] gap-7  flex items-center justify-between flex-col ss:flex-row footer-footer mt-10 `}
+          className={` ${styles.boxWidth} ${styles.padding2} py-7 md:h-[80px] gap-7  flex items-center justify-between flex-col ss:flex-row footer-footer mt-10 `}
         >
           <div className="logo-copyright flex gap-7 items-center">
             <img src={logoDark} alt="" className="" />
@@ -155,6 +155,14 @@ const Footer = () => {
               </div>
             ))}
           </div>
+        </div >
+        <div className="flex items-center justify-center">
+        <p className="py-3 text-[17px]">Built by:
+           <span >
+          <a href={'https://linkedin.com/in/daniel-ojeyomi'} target="_blank" className="font-bold"> {""}
+           Daniel Swift</a>
+          </span>
+        </p>
         </div>
       </div>
     </footer>
