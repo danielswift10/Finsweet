@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import {
   andrew,
-  arrowRightDark,
   shapesRight,
   visionImage,
 } from "../../../Assets";
