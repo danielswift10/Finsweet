@@ -6,7 +6,6 @@ import {
   visionImage,
 } from "../../../Assets";
 import styles from "../../../styles";
-import { NavLink } from "react-router-dom";
 
 
 const TrendingBlog1 = (props) => {
