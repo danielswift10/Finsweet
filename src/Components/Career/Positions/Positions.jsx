@@ -1,7 +1,7 @@
 import styles from "../../../styles";
 import { position } from "../../../Constants";
 import { arrowRightDark } from "../../../Assets";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import JobApplication from "../JobApplication/JobApplication";
 
