@@ -7,7 +7,7 @@ import {
 } from "../../../Assets";
 import styles from "../../../styles";
 import { NavLink } from "react-router-dom";
-import { trendingBlog } from "../../../Constants";
+
 
 const TrendingBlog1 = (props) => {
   useEffect(() => {
