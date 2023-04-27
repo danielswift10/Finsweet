@@ -3,7 +3,6 @@ import { position } from "../../../Constants";
 import { arrowRightDark } from "../../../Assets";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import ";
 
 const Positions = () => {
     const [selectedPosition, setSelectedPosition] = useState(null);
