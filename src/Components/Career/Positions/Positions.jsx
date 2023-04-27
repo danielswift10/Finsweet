@@ -3,7 +3,7 @@ import { position } from "../../../Constants";
 import { arrowRightDark } from "../../../Assets";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import JobApplication from "../JobApplication/JobApplication";
+import JobApplication from "../JobApplication/";
 
 const Positions = () => {
     const [selectedPosition, setSelectedPosition] = useState(null);
