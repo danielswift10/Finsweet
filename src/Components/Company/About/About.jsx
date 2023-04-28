@@ -1,6 +1,5 @@
 import {
   aboutImage1,
-  aboutImage2,
   shapesRight,
 } from "../../../Assets";
 import { Statistics, aboutImages, clients } from "../../../Constants";
