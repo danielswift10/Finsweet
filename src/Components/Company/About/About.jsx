@@ -3,7 +3,6 @@ import {
   aboutImage2,
   aboutImage3,
   aboutShape,
-  arrowRight,
   shapesRight,
 } from "../../../Assets";
 import { Statistics, aboutImages, clients } from "../../../Constants";
