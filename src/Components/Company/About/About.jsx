@@ -4,7 +4,6 @@ import {
   aboutImage3,
   aboutShape,
   arrowRight,
-  arrowRightDark,
   shapesRight,
 } from "../../../Assets";
 import { Statistics, aboutImages, clients } from "../../../Constants";
