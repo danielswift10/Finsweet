@@ -1,7 +1,7 @@
 import {
   shapesRight,
 } from "../../../Assets";
-import { Statistics, aboutImages, clients } from "../../../Constants";
+import { Statistics, aboutImages } from "../../../Constants";
 import styles, { layout } from "../../../styles";
 
 const About = () => {
