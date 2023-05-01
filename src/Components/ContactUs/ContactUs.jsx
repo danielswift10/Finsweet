@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 
 import {
-  arrowRight,
   bottomShapes,
   map,
   shapesRight,
