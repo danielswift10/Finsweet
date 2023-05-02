@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import {
   bottomShapes,
   map,
-  shapesRight,
   topShapes,
 } from "../../Assets";
 import styles from "../../styles";
