@@ -1,6 +1,6 @@
 import { shapesRight } from "../../../Assets";
 import { ProcessCard } from "../../../Constants";
-import styles, { layout } from "../../../styles";
+import styles, { } from "../../../styles";
 
 const Process = () => {
   return (
