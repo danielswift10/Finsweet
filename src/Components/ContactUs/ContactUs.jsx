@@ -1,5 +1,3 @@
-
-
 import {
   bottomShapes,
   map,
