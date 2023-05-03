@@ -43,7 +43,7 @@ const Process = () => {
              <div className="">
                 <img
                   src={service.image}
-                  alt="image"
+                  alt="img"
                   className="w-[50px] ss:w-[100px] mb-5 "
                 />
               </div>
