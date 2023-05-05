@@ -1,6 +1,4 @@
-import {
-  shapesRight,
-} from "../../../Assets";
+import { shapesRight } from "../../../Assets";
 import { aboutImages } from "../../../Constants";
 import styles, {  } from "../../../styles";
 
