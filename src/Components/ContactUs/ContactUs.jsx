@@ -1,8 +1,4 @@
-import {
-  bottomShapes,
-  map,
-  topShapes,
-} from "../../Assets";
+import { bottomShapes, map, topShapes } from "../../Assets";
 import styles from "../../styles";
 import { Button } from "../../Utils";
 import { ContactSocials, ContactWrapper } from "../../Constants";
