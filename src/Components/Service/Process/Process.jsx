@@ -1,4 +1,4 @@
-import { arrowRight, shapesRight } from "../../../Assets";
+import { shapesRight } from "../../../Assets";
 import { ProcessCard } from "../../../Constants";
 import styles, { layout } from "../../../styles";
 
