@@ -1,7 +1,5 @@
 import { NavLink } from "react-router-dom";
-import {
-  arrowRightDark,
-} from "../../../Assets";
+import { arrowRightDark } from "../../../Assets";
 import { Statistics, aboutImages } from "../../../Constants";
 import styles, { layout } from "../../../styles";
 
