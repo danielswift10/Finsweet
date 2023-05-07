@@ -7,7 +7,7 @@ const StartWrapper = (Component) =>
       <section
       >
         
-        <span className={`${styles.padding} ${styles.boxWidth} bg-darkBlue ${} `}>
+        <span className={`${styles.padding} ${styles.boxWidth} bg-darkBlue`}>
           &nbsp;
         </span>
 
