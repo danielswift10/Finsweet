@@ -1,5 +1,5 @@
 
-import styles from "../styles";
+import styles, { layout } from "../styles";
 
 const StartWrapper = (Component) => 
   function HOC() {
@@ -7,7 +7,7 @@ const StartWrapper = (Component) =>
       <section
       >
         
-        <span className={`${styles.padding} ${styles.boxWidth} bg-darkBlue `}>
+        <span className={`${styles.padding} ${styles.boxWidth} bg-darkBlue ${layout.section} `}>
           &nbsp;
         </span>
 
