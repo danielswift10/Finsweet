@@ -1,5 +1,5 @@
 
-import styles, { layout } from "../styles";
+import styles, {  } from "../styles";
 
 const StartWrapper = (Component) => 
   function HOC() {
