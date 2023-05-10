@@ -28,7 +28,7 @@ const Process = () => {
           <div className="">
             <img
               src={shapesRight}
-              alt=""
+              alt="shapes-right"
               className="w-[70px] xs:w-[50px] ss:w-fit md:w-fit sm:w-[20px]"
             />
           </div>
