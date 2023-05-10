@@ -25,7 +25,7 @@ const Process = () => {
             </p>
           </div>
 
-          <div className="">
+          <div>
             <img
               src={shapesRight}
               alt="shapes-right"
