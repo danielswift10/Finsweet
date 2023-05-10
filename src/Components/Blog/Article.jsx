@@ -15,7 +15,7 @@ const Article = ({ image, title, content, avatar, name, date }) => {
         <p className={`${styles.paragraph} mb-5`}>{content}</p>
         <div className="flex  items-center gap-4">
           <div className="avatar">
-            <img src={avatar} alt="" className="w-fit" />
+            <img src={avatar} alt="avatar" className="w-fit" />
           </div>
           <div className="name-date">
             <p className={`${styles.paragraph}`}>{name}</p>
