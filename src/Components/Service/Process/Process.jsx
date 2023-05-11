@@ -60,7 +60,7 @@ const Process = () => {
                 </p>
               </div>
              </div>
-             <img src={service.lined} alt="" className="absolute w-[23px] md:w-[38px] lg:w-auto md:bottom-[-21px] bottom-[-10px] lg:bottom-[70px] lg:right-[-50px] rotate-[90deg] lg:rotate-[0] " />
+             <img src={service.lined} alt="line" className="absolute w-[23px] md:w-[38px] lg:w-auto md:bottom-[-21px] bottom-[-10px] lg:bottom-[70px] lg:right-[-50px] rotate-[90deg] lg:rotate-[0] " />
             </div>
           ))}
         </div>
