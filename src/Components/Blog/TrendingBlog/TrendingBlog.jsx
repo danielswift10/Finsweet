@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { andrew, arrowRightDark, shapesLeft, shapesRight, trendingPost, trendingShapes } from "../../../Assets";
+import { andrew, arrowRightDark, shapesLeft, shapesRight, trendingPost } from "../../../Assets";
 import styles from "../../../styles";
 import { trendingBlog } from "../../../Constants";
 
