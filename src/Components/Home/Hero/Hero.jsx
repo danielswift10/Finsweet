@@ -1,4 +1,4 @@
-import { heroImage, heroShapeL, heroShapeR, shapesLeft } from "../../../Assets";
+import { heroImage, heroShapeL, heroShapeR } from "../../../Assets";
 import {Button} from "../../../Utils";
 import styles, { layout } from "../../../styles";
 import { Ipsum } from "../../../Constants"
